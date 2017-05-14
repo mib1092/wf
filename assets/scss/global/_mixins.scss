@@ -14,12 +14,12 @@
 }
 
 // BORDER RADIUS
-@mixin border-radius($radius: 10px) {
+@mixin border-radius($radius: 4px) {
   @include css3-prefix('border-radius', $radius);
 }
 
 // FONT
-@mixin font($weight: $normal, $size: $size-main, $family: $font-main, $line-height: $line-height) {
+@mixin font($weight: 400, $size: $font-size, $family: $font-main, $line-height: $line-height) {
   font: $weight $size $family;
   line-height: $line-height;
 }
