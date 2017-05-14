@@ -228,5 +228,11 @@ img {
 
 /* styles used throughout site */
 /*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (min-width: 992px) {
+  .logo-mobile {
+    display: none; } }
+@media all and (max-width: 991px) {
+  .logo-desktop {
+    display: none; } }
 
 /*# sourceMappingURL=screen.css.map */
