@@ -1,11 +1,7 @@
 /*fonts*/
-$font-main: 'Roboto', Arial, sans-serif;
-$font-heading: 'Patua One', 'Roboto', Arial, sans-serif;
-
-/*fonts-weight*/
-$normal: 400;
-$medium: 500;
-$bold: 700;
+$font-reserve: 'Source Sans Pro';
+$font-heading: 'Montserrat';
+$font-main: 'ProgramOT', $font-reserve, $font-heading, Arial, sans-serif;
 
 /*fonts-size*/
 $size-main: 18px;
@@ -15,23 +11,17 @@ $size-heading2: 40px;
 $size-heading3: 28px;
 
 /*line-height*/
-$line-height: 1.6;
-$line-height-heading: 1;
+$line-height: 1.4;
+$line-height-heading: 1.25;
 
 /*colors*/
 $white: #ffffff;
-$color-text: #333333;
-$color-text2: #313b43;
-$color-text3: #ff614c;
-$color-bg1: $white;
-$color-bg2: #ff4948;
-$color-bg3: #1d4d94;
-$color-bg4: #d5d5d5;
+$color-text: #5d5d5d;
+$color-heading: #005aff;
+$color-nav-small: #e49f9f;
+$bg-color: $white;
+$bg-color-grey: #f0f0f0;
 
 /*transition*/
-$transition-link: 0.2s;
-$transition-other: 0.35s;
-
-/*border-radius*/
-$radius-main: 10px;
-$radius-small: 5px;
+$duration: 0.35s;
+$duration-link: 0.25s;
