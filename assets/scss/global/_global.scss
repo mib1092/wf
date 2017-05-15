@@ -105,3 +105,37 @@ img {
     }
   }
 }
+a.btn-play,
+.btn-play {
+  position: relative;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+  }
+  &:before {
+    margin-left: -7px;
+    margin-top: -2px;
+    width: 78px;
+    height: 78px;
+    @include border-radius(50%);
+    top: 50%;
+    left: 50%;
+    @include css3-prefix('transform', ' translate(-50%, -50%)');
+    border: 2px solid $white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    margin-left: -7px;
+    border-top: 12px solid transparent;
+    border-left: 14px solid white;
+    border-bottom: 12px solid transparent;
+    left: 50%;
+    top: 50%;
+    @include css3-prefix('transform', 'rotate(8.6deg) translate(-50%, -50%)');
+  }
+}
