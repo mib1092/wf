@@ -113,6 +113,12 @@
   font-style: normal;
 }
 */
+@font-face {
+  font-family: 'ProgramOT-Book';
+  src: url("../fonts/33B714_0_0.eot");
+  src: url("../fonts/33B714_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/33B714_0_0.woff2") format("woff2"), url("../fonts/33B714_0_0.woff") format("woff"), url("../fonts/33B714_0_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 /*import global styles */
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
@@ -124,7 +130,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  font: 400 18px "ProgramOT", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  font: 400 18px "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
   line-height: 1.4;
   background: #ffffff;
   color: #5d5d5d;
@@ -159,7 +165,7 @@ table {
   border-spacing: 0; }
 
 a:link, a:visited {
-  font-family: "ProgramOT", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  font-family: "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
   color: #005aff;
   text-decoration: underline; }
 
@@ -360,7 +366,7 @@ img {
   padding-top: 16px;
   padding-bottom: 18px;
   text-align: center;
-  font: 400 30px "ProgramOT", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  font: 400 30px "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
   line-height: 1.25;
   color: #323232;
   background-color: #FFBA00; }
