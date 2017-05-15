@@ -1,9 +1,15 @@
 .weather-alert {
-  min-height: 72px;
+  padding-top: 16px;
+  padding-bottom: 18px;
   text-align: center;
-  font-size: 29px;
+  @include font(400, 30px, $font-main, 1.25);
   color: #323232;
   background-color: $bg-color-yellow;
+  strong {
+    font-family: $font-heading;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+  }
 }
 
 .hero {
@@ -23,27 +29,57 @@
     @include bg(top center, contain, no-repeat);
   }
 }
+
+.hero-info-wrap {
+  float: right;
+  display: table;
+  max-width: 520px;
+  min-height: 490px;
+  width: 100%;
+}
+  .hero-info-box {
+    display: table-cell;
+    width: 100%;
+    min-height: 100px;
+    vertical-align: bottom;
+  }
+    .hero-box {
+      background-color: rgba(0, 1, 197, 0.83);
+    }
   .hero-title {
     position: relative;
-    display: block;
-    max-width: 505px;
-    max-height: 230px;
-    @include bg(center, cover, no-repeat);
-    background-image: url(../../img/hero_home_bg.png);
+    display: inline-block;
+    margin-top: 101px;
+    margin-bottom: 149px;
+    &:after {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      width: 583px;
+      height: 498px;
+      top: -108px;
+      left: -156px;
+      @include bg(center, cover, no-repeat);
+      background-image: url(../../img/hero_home_bg.png);
+    }
     h1 {
-      max-width: 260px;
+      position: relative;
+      z-index: 10;
       @include font(900, 58.35px, $font-heading, 1);
       letter-spacing: 1.2px;
       color: $white;
 
       span {
         display: block;
-        margin-bottom: 34px;
+        margin-bottom: 35px;
+        letter-spacing: 0.95px;
         &:nth-child(2) {
-          margin-left: 2px;
-          margin-bottom: 10px;
+          margin-left: -3px;
+          margin-bottom: 37px;
+          letter-spacing: 0.65px;
         }
         &:last-child {
+          margin-left: -1px;
           font-size: 18.25px;
         }
       }
@@ -64,5 +100,21 @@
     top: -38px;
     background-image: url(../../img/transition_grey.png);
     @include bg(bottom center, contain, no-repeat);
+  }
+}
+
+
+.video-box {
+  position: relative;
+  z-index: 20;
+  float: left;
+  display: block;
+  max-width: 267px;
+  margin-top: 11px;
+  left: -9px;
+  @include css3-prefix('transform', 'rotate(-8.6deg)');
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

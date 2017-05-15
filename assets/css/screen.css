@@ -304,16 +304,70 @@ img {
   .logo .logo-mobile {
     display: none; }
 
+.top-navbar .container {
+  max-width: 1170px; }
+
 .home .top-nav {
   display: none; }
 
+.nav .container {
+  max-width: 1420px; }
+.nav ul {
+  position: relative;
+  z-index: 10;
+  margin: 0 94px;
+  text-align: center;
+  background-color: #0001c5; }
+  .nav ul:before, .nav ul:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 94px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .nav ul:before {
+    left: -94px;
+    background-image: url(../../img/hero_nav_bg_l.png); }
+  .nav ul:after {
+    right: -94px;
+    background-image: url(../../img/hero_nav_bg_r.png); }
+  .nav ul > li {
+    position: relative;
+    display: inline-block; }
+    .nav ul > li:after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 100%;
+      right: -2px;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.3); }
+    .nav ul > li:last-child:after {
+      content: none; }
+    .nav ul > li a {
+      display: inline-block;
+      padding: 22px 58px 24px;
+      font: 900 26px "Montserrat";
+      line-height: 1.25;
+      color: #ffffff;
+      letter-spacing: 0.6px;
+      text-decoration: none; }
+
 /* styles used throughout site */
 .weather-alert {
-  min-height: 72px;
+  padding-top: 16px;
+  padding-bottom: 18px;
   text-align: center;
-  font-size: 29px;
+  font: 400 30px "ProgramOT", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  line-height: 1.25;
   color: #323232;
   background-color: #FFBA00; }
+  .weather-alert strong {
+    font-family: "Montserrat";
+    font-weight: 900;
+    letter-spacing: 0.2px; }
 
 .hero {
   position: relative;
@@ -335,28 +389,56 @@ img {
     background-size: contain;
     background-repeat: no-repeat; }
 
+.hero-info-wrap {
+  float: right;
+  display: table;
+  max-width: 520px;
+  min-height: 490px;
+  width: 100%; }
+
+.hero-info-box {
+  display: table-cell;
+  width: 100%;
+  min-height: 100px;
+  vertical-align: bottom; }
+
+.hero-box {
+  background-color: rgba(0, 1, 197, 0.83); }
+
 .hero-title {
   position: relative;
-  display: block;
-  max-width: 505px;
-  max-height: 230px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../../img/hero_home_bg.png); }
+  display: inline-block;
+  margin-top: 101px;
+  margin-bottom: 149px; }
+  .hero-title:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    width: 583px;
+    height: 498px;
+    top: -108px;
+    left: -156px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../img/hero_home_bg.png); }
   .hero-title h1 {
-    max-width: 260px;
+    position: relative;
+    z-index: 10;
     font: 900 58.35px "Montserrat";
     line-height: 1;
     letter-spacing: 1.2px;
     color: #ffffff; }
     .hero-title h1 span {
       display: block;
-      margin-bottom: 34px; }
+      margin-bottom: 35px;
+      letter-spacing: 0.95px; }
       .hero-title h1 span:nth-child(2) {
-        margin-left: 2px;
-        margin-bottom: 10px; }
+        margin-left: -3px;
+        margin-bottom: 37px;
+        letter-spacing: 0.65px; }
       .hero-title h1 span:last-child {
+        margin-left: -1px;
         font-size: 18.25px; }
 
 .section-questions {
@@ -375,6 +457,24 @@ img {
     background-position: bottom center;
     background-size: contain;
     background-repeat: no-repeat; }
+
+.video-box {
+  position: relative;
+  z-index: 20;
+  float: left;
+  display: block;
+  max-width: 267px;
+  margin-top: 11px;
+  left: -9px;
+  -webkit-transform: rotate(-8.6deg);
+  -khtml-transform: rotate(-8.6deg);
+  -moz-transform: rotate(-8.6deg);
+  -ms-transform: rotate(-8.6deg);
+  -o-transform: rotate(-8.6deg);
+  transform: rotate(-8.6deg); }
+  .video-box img {
+    max-width: 100%;
+    height: auto; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (min-width: 992px) {
