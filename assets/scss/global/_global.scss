@@ -9,12 +9,10 @@ body                            { padding:0; margin:0; @include font(); backgrou
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
   padding:0;
   margin:0;
-  outline:none;
   list-style:none;
 }
 select, input, textarea        { font-size:$font-size; vertical-align:middle; color:$color-text; }
 textarea                       { vertical-align:top; }
-:focus                         { outline:none; }
 input[type=submit], button     { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }

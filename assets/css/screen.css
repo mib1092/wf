@@ -140,7 +140,6 @@ body {
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea {
   padding: 0;
   margin: 0;
-  outline: none;
   list-style: none; }
 
 select, input, textarea {
@@ -150,9 +149,6 @@ select, input, textarea {
 
 textarea {
   vertical-align: top; }
-
-:focus {
-  outline: none; }
 
 input[type=submit], button {
   cursor: pointer; }
