@@ -64,7 +64,7 @@
       top: -108px;
       left: -156px;
       @include bg(center, cover, no-repeat);
-      background-image: url(../../img/hero_home_bg.png);
+      //background-image: url(../../img/hero_home_bg.png);
     }
     h1 {
       position: relative;
@@ -72,19 +72,55 @@
       @include font(900, 58.35px, $font-heading, 1);
       letter-spacing: 1.2px;
       color: $white;
-
-      span {
+      > span {
+        position: relative;
         display: block;
         margin-bottom: 35px;
         letter-spacing: 0.95px;
-        &:nth-child(2) {
+        > span {
+          position: relative;
+          z-index: 50;
+        }
+        &:before {
+          position: absolute;
+          content: '';
+          @include bg(center, contain, no-repeat);
+        }
+        &.blue_bg {
+
+          &:before {
+            left: -76px;
+            top: -25px;
+            z-index: 10;
+            width: 517px;
+            height: 119px;
+            background-image: url(../../img/top-watercolor.png);
+          }
+        }
+        &.red_bg {
           margin-left: -3px;
           margin-bottom: 37px;
           letter-spacing: 0.65px;
+          &:before {
+            left: -153px;
+            top: -25px;
+            z-index: 20;
+            width: 508px;
+            height: 113px;
+            background-image: url(../../img/middle-watercolor.png);
+          }
         }
-        &:last-child {
+        &.grey_bg {
           margin-left: -1px;
           font-size: 18.25px;
+          &:before {
+            left: -70px;
+            top: -40px;
+            z-index: 10;
+            width: 383px;
+            height: 89px;
+            background-image: url(../../img/bottom-watercolor.png);
+          }
         }
       }
     }
@@ -112,6 +148,8 @@
     }
 
     .experience-box {
+      position: relative;
+      z-index: 40;
       overflow: hidden;
       max-width: 400px;
       padding: 45px 10px 9px 41px;;
@@ -128,6 +166,8 @@
       }
 
     .facebook-box {
+      position: relative;
+      z-index: 40;
       float: right;
       max-width: 216px;
       width: 100%;
@@ -147,6 +187,9 @@
             width: 100%;
             color: $white;
             text-decoration: none;
+            &:hover {
+              color: #606060;
+            }
             @include font(200, 14px, $font-heading, 1.6);
             border: 1px solid #606060;
             img {
