@@ -377,22 +377,23 @@ img {
 
 .hero {
   position: relative;
-  margin-bottom: 58px;
+  padding-bottom: 49px;
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #000; }
   .hero:after {
     position: absolute;
+    z-index: 30;
     content: '';
     width: 100%;
-    height: 58px;
+    height: 91px;
     left: 0;
     right: 0;
-    bottom: -58px;
-    background-image: url(../../img/transition_black.png);
+    bottom: 0;
+    background-image: url(../../img/transition_white_v2.png);
     background-position: top center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat; }
 
 .hero-info-wrap {
@@ -447,23 +448,6 @@ img {
         margin-left: -1px;
         font-size: 18.25px; }
 
-.section-questions {
-  position: relative;
-  margin-top: 38px;
-  background-color: #f0f0f0; }
-  .section-questions:after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 38px;
-    left: 0;
-    right: 0;
-    top: -38px;
-    background-image: url(../../img/transition_grey.png);
-    background-position: bottom center;
-    background-size: contain;
-    background-repeat: no-repeat; }
-
 .video-box {
   position: relative;
   z-index: 20;
@@ -481,6 +465,39 @@ img {
   .video-box img {
     max-width: 100%;
     height: auto; }
+
+.facebook-box {
+  float: right;
+  max-width: 216px; }
+  .facebook-box > ul > li a {
+    border: 1px solid #606060; }
+
+.icon-box {
+  background-color: #606060; }
+  .icon-box .fa {
+    color: #000; }
+
+.section-plan {
+  position: relative;
+  z-index: 20;
+  background-color: #ffffff; }
+
+.section-questions {
+  position: relative;
+  margin-top: 38px;
+  background-color: #f0f0f0; }
+  .section-questions:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 38px;
+    left: 0;
+    right: 0;
+    top: -38px;
+    background-image: url(../../img/transition_grey.png);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (min-width: 992px) {
