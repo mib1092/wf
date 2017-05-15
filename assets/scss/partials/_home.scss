@@ -196,9 +196,11 @@
       margin-bottom: 50px;
       font-size: $font-size-h2;
       text-align: center;
+      letter-spacing: -0.5px;
     }
   }
   .plan-list {
+    margin-top: 140px;
     text-align: center;
     > li {
       display: inline-block;

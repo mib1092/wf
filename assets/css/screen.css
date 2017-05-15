@@ -595,9 +595,11 @@ a.btn-play,
   .title.home-subtitle {
     margin-bottom: 50px;
     font-size: 28px;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: -0.5px; }
 
 .plan-list {
+  margin-top: 140px;
   text-align: center; }
   .plan-list > li {
     display: inline-block;
