@@ -1,0 +1,68 @@
+.weather-alert {
+  min-height: 72px;
+  text-align: center;
+  font-size: 29px;
+  color: #323232;
+  background-color: $bg-color-yellow;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 58px;
+  @include bg(top center, contain, no-repeat);
+  background-color: #000;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 58px;
+    left: 0;
+    right: 0;
+    bottom: -58px;
+    background-image: url(../../img/transition_black.png);
+    @include bg(top center, contain, no-repeat);
+  }
+}
+  .hero-title {
+    position: relative;
+    display: block;
+    max-width: 505px;
+    max-height: 230px;
+    @include bg(center, cover, no-repeat);
+    background-image: url(../../img/hero_home_bg.png);
+    h1 {
+      max-width: 260px;
+      @include font(900, 58.35px, $font-heading, 1);
+      letter-spacing: 1.2px;
+      color: $white;
+
+      span {
+        display: block;
+        margin-bottom: 34px;
+        &:nth-child(2) {
+          margin-left: 2px;
+          margin-bottom: 10px;
+        }
+        &:last-child {
+          font-size: 18.25px;
+        }
+      }
+    }
+  }
+
+.section-questions {
+  position: relative;
+  margin-top: 38px;
+  background-color: $bg-color-grey;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 38px;
+    left: 0;
+    right: 0;
+    top: -38px;
+    background-image: url(../../img/transition_grey.png);
+    @include bg(bottom center, contain, no-repeat);
+  }
+}
