@@ -405,6 +405,8 @@ a.btn-play,
       color: #ffffff;
       letter-spacing: 0.6px;
       text-decoration: none; }
+      .nav ul > li a:hover {
+        background-color: rgba(2, 2, 13, 0.2); }
 
 /* styles used throughout site */
 .weather-alert {
