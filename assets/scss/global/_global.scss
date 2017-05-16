@@ -159,7 +159,7 @@ a.btn-play,
     left: 50%;
     @include css3-prefix('transform', ' translate(-50%, -50%)');
     border: 2px solid $white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   &:after {
     z-index: 160;
