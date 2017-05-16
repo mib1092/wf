@@ -149,6 +149,7 @@ a.btn-play,
     content: '';
   }
   &:before {
+    z-index: 150;
     margin-left: -7px;
     margin-top: -2px;
     width: 78px;
@@ -161,11 +162,12 @@ a.btn-play,
     background-color: rgba(0, 0, 0, 0.5);
   }
   &:after {
+    z-index: 160;
     width: 0;
     height: 0;
-    margin-left: -7px;
+    margin-left: -8px;
     border-top: 12px solid transparent;
-    border-left: 14px solid white;
+    border-left: 16px solid white;
     border-bottom: 12px solid transparent;
     left: 50%;
     top: 50%;

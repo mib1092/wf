@@ -42,7 +42,7 @@
     float: right;
     display: table;
     max-width: 520px;
-    min-height: 491px;
+    min-height: 490px;
     width: 100%;
   }
   .hero-info-box {
@@ -60,7 +60,7 @@
     max-width: 186px;
     margin-right: 21px;
     a {
-      margin-bottom: 15px;
+      margin-bottom: 16px;
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -73,6 +73,10 @@
       text-align: right;
       letter-spacing: 0.3px;
       @include border-radius(0);
+      &.small {
+        float: right;
+        max-width: 167px;
+      }
     }
   }
   .hero-box-text {
@@ -96,13 +100,14 @@
     display: inline-block;
     margin-top: -7px;
     @include font(400, 14px, $font-main, $line-height);
+    letter-spacing: 0.7px;
   }
 
   .hero-title {
     position: relative;
     display: inline-block;
     margin-top: 101px;
-    margin-bottom: 151px;
+    margin-bottom: 150px;
     margin-left: 73px;
     &:after {
       position: absolute;
@@ -139,7 +144,7 @@
 
           &:before {
             left: -76px;
-            top: -25px;
+            top: -26px;
             z-index: 10;
             width: 517px;
             height: 119px;
@@ -189,6 +194,24 @@
     margin-top: 11px;
     margin-left: 30px;
     left: -9px;
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      z-index: 100;
+      opacity: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include transition($duration);
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
     @include css3-prefix('transform', 'rotate(-8.6deg)');
     img {
       max-width: 100%;
@@ -196,7 +219,39 @@
     }
   }
 
-  .experience-box {
+  /* overlay at start */
+  .mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out; }
+
+  /* overlay animate in */
+  .mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8; }
+
+  /* overlay animate out */
+  .mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0; }
+
+  /* content at start */
+  .mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out; }
+
+  /* content animate it */
+  .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1; }
+
+  /* content animate out */
+  .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0; }
+
+
+
+.experience-box {
     position: relative;
     z-index: 40;
     overflow: hidden;
@@ -488,8 +543,8 @@
         > li {
           float: left;
           position: relative;
-          width: 16.667%;
-          padding-bottom: 16.667%;
+          width: 16.666%;
+          padding-bottom: 16.666%;
         }
       }
     }
