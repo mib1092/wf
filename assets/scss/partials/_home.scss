@@ -33,28 +33,77 @@
     @include bg(top center, cover, no-repeat);
   }
 }
-
-.hero-info-wrap {
-  float: right;
-  display: table;
-  max-width: 520px;
-  min-height: 490px;
-  width: 100%;
+.container {
+  &.hero-top {
+    max-width: 1168px;
+  }
 }
+  .hero-info-wrap {
+    float: right;
+    display: table;
+    max-width: 520px;
+    min-height: 491px;
+    width: 100%;
+  }
   .hero-info-box {
     display: table-cell;
     width: 100%;
     min-height: 100px;
     vertical-align: bottom;
   }
-    .hero-box {
-      background-color: rgba(0, 1, 197, 0.83);
+  .hero-box {
+    padding: 40px 30px 46px 45px;
+    background-color: rgba(0, 1, 197, 0.83);
+  }
+  .hero-box-btn {
+    float: left;
+    max-width: 186px;
+    margin-right: 21px;
+    a {
+      margin-bottom: 15px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
+    a.btn, .btn {
+      padding: 7px 13px 4px;
+      font-weight: 800;
+      font-size: 20px;
+      text-transform: none;
+      text-align: right;
+      letter-spacing: 0.3px;
+      @include border-radius(0);
+    }
+  }
+  .hero-box-text {
+    overflow: hidden;
+    position: relative;
+    top: 9px;
+    @include font(500, 17.58px, $font-heading, $line-height);
+    color: $white;
+    letter-spacing: 0.5px;
+    * {
+      margin-bottom: 6px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .pm {
+      font-size: 12px;
+    }
+  }
+  .hero-box-info {
+    display: inline-block;
+    margin-top: -7px;
+    @include font(400, 14px, $font-main, $line-height);
+  }
+
   .hero-title {
     position: relative;
     display: inline-block;
     margin-top: 101px;
-    margin-bottom: 149px;
+    margin-bottom: 151px;
+    margin-left: 73px;
     &:after {
       position: absolute;
       z-index: 1;
@@ -75,7 +124,7 @@
       > span {
         position: relative;
         display: block;
-        margin-bottom: 35px;
+        margin-bottom: 34px;
         letter-spacing: 0.95px;
         > span {
           position: relative;
@@ -105,8 +154,8 @@
             left: -153px;
             top: -25px;
             z-index: 20;
-            width: 508px;
-            height: 113px;
+            width: 503px;
+            height: 115px;
             background-image: url(../../img/middle-watercolor.png);
           }
         }
@@ -131,115 +180,123 @@
       max-width: 1076px;
     }
   }
-    .video-box {
-      position: relative;
-      z-index: 20;
-      float: left;
-      display: block;
-      max-width: 267px;
-      margin-top: 11px;
-      margin-left: 30px;
-      left: -9px;
-      @include css3-prefix('transform', 'rotate(-8.6deg)');
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+  .video-box {
+    position: relative;
+    z-index: 20;
+    float: left;
+    display: block;
+    max-width: 267px;
+    margin-top: 11px;
+    margin-left: 30px;
+    left: -9px;
+    @include css3-prefix('transform', 'rotate(-8.6deg)');
+    img {
+      max-width: 100%;
+      height: auto;
     }
+  }
 
-    .experience-box {
-      position: relative;
-      z-index: 40;
-      overflow: hidden;
-      max-width: 400px;
-      padding: 45px 10px 9px 41px;;
-      @include font(200, 14px, $font-heading, 1.6);
-      letter-spacing: 0.3px;
-      opacity: 0.45;
-      color: $white;
-    }
-      .experience-title {
+  .experience-box {
+    position: relative;
+    z-index: 40;
+    overflow: hidden;
+    max-width: 400px;
+    padding: 45px 10px 9px 41px;;
+    @include font(200, 14px, $font-heading, 1.6);
+    letter-spacing: 0.3px;
+    opacity: 0.45;
+    color: $white;
+  }
+  .experience-title {
+    margin-bottom: 7px;
+    @include font(900, $font-size, $font-heading, $line-height-heading);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .facebook-box {
+    position: relative;
+    z-index: 40;
+    float: right;
+    max-width: 216px;
+    width: 100%;
+    margin-top: 48px;
+    > ul {
+      > li {
         margin-bottom: 7px;
-        @include font(900, $font-size, $font-heading, $line-height-heading);
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
-
-    .facebook-box {
-      position: relative;
-      z-index: 40;
-      float: right;
-      max-width: 216px;
-      width: 100%;
-      margin-top: 48px;
-      > ul {
-        > li {
-          margin-bottom: 7px;
-          &:last-child {
-            margin-bottom: 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          position: relative;
+          display: inline-block;
+          min-height: 38px;
+          padding: 6px 40px 5px 15px;
+          letter-spacing: 0.3px;
+          width: 100%;
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: #606060;
           }
-          a {
+          @include font(200, 14px, $font-heading, 1.6);
+          border: 1px solid #606060;
+          img {
             position: relative;
-            display: inline-block;
-            min-height: 38px;
-            padding: 6px 40px 5px 15px;
-            letter-spacing: 0.3px;
-            width: 100%;
-            color: $white;
-            text-decoration: none;
-            &:hover {
-              color: #606060;
-            }
-            @include font(200, 14px, $font-heading, 1.6);
-            border: 1px solid #606060;
-            img {
-              position: relative;
-              bottom: -5px;
-              left: -4px;
-              max-width: 24px;
-              height: auto;
-            }
+            bottom: -5px;
+            left: -4px;
+            max-width: 24px;
+            height: auto;
           }
         }
       }
     }
-            .icon-box {
-              position: absolute;
-              top: -1px;
-              right: -1px;
-              display: block;
-              width: 38px;
-              height: 38px;
-              line-height: 38px;
-              text-align: center;
-              background-color: #606060;
-              cursor: pointer;
-              .fa {
-                vertical-align: middle;
-                color: #000;
-                font-size: 22px;
-              }
-            }
-
-.section-plan {
-  overflow: hidden;
-  position: relative;
-  z-index: 20;
-  padding-top: 48px;
-  padding-bottom: 100px;
-  background-color: $white;
-  .container {
-    max-width: 1600px;
   }
-}
+  .icon-box {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #606060;
+    cursor: pointer;
+    .fa {
+      vertical-align: middle;
+      color: #000;
+      font-size: 22px;
+    }
+  }
+
+  .section-plan {
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+    padding-top: 48px;
+    padding-bottom: 50px;
+    background-color: $white;
+    .container {
+      max-width: 1600px;
+    }
+  }
   .title {
     @include font(900, $font-size-h1, $font-heading, $line-height-heading);
     color: $color-heading;
     &.home-subtitle {
-      margin-bottom: 50px;
+      margin-bottom: 2px;
       font-size: $font-size-h2;
-      text-align: center;
       letter-spacing: -0.5px;
+      & .section-plan {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+    &.home-title {
+      margin-bottom: 24px;
+      font-size: 38px;
+      letter-spacing: 0.7px;
     }
   }
   .plan-list {
@@ -248,6 +305,7 @@
     > li {
       display: inline-block;
       margin-bottom: 90px;
+      padding: 0 10px;
       width: 24%;
       vertical-align: top;
       .plan-box {
@@ -263,6 +321,13 @@
           left: 50%;
           @include css3-prefix('transform', ' translate(-50%, -50%)');
           @include bg(center, cover, no-repeat);
+        }
+        a.btn, .btn {
+          max-width: 192px;
+          margin-top: 27px;
+          font-size: 14.47px;
+          padding-top: 12px;
+          padding-bottom: 12px;
         }
       }
       &:nth-child(4n+1) .plan-box {
@@ -299,30 +364,190 @@
       }
     }
   }
-      .plan-box {
-        max-width: 240px;
-        margin: 0 auto;
-        @include font(900, 14.47px, $font-main, $line-height);
-        text-align: center;
-        color: $white
-      }
-        .title-plan  {
-          @include font(900, 23.53px, $font-heading, $line-height-heading);
-        }
-.section-questions {
-  position: relative;
-  margin-top: 38px;
-  background-color: $bg-color-grey;
-  &:after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 38px;
-    left: 0;
-    right: 0;
-    top: -38px;
-    background-image: url(../../img/transition_grey.png);
-    @include bg(bottom center, contain, no-repeat);
+  .plan-box {
+    max-width: 260px;
+    margin: 0 auto;
+    @include font(900, 14.47px, $font-main, $line-height);
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $white
   }
-}
+  .title-plan  {
+    margin-bottom: 5px;
+    @include font(900, 23.53px, $font-heading, $line-height-heading);
+  }
+  .section-questions {
+    position: relative;
+    margin-top: 38px;
+    padding-top: 40px;
+    padding-bottom: 121px;
+    background-color: $bg-color-grey;
+    .container {
+      overflow: hidden;
+      max-width: 1300px;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 38px;
+      left: 0;
+      right: 0;
+      top: -38px;
+      background-image: url(../../img/transition_grey.png);
+      @include bg(bottom center, cover, no-repeat);
+    }
+  }
+  .half-box {
+    .home-title {
+      margin-left: 8px;
+    }
+    .title.home-subtitle {
+      margin-bottom: 0;
+      letter-spacing: -0.3px;
+    }
+    &.right {
+      float: right;
+      max-width: 400px;
+      margin-top: 17px;
+      width: 100%;
+      a.btn, .btn {
+        margin-top: 4px;
+      }
+    }
+  }
+  .icons-list {
+    img {
+      max-width: 352.5px;
+      margin-right: 15px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .pet-box {
+    margin-top: 44px;
+    margin-left: 8px;
+  }
+  .pet-img {
+    display: inline-block;
+    max-width: 50px;
+    margin-right: 26px;
+    padding-top: 1px;
+    vertical-align: top;
+  }
+  .pet-box-text {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 560px;
+    @include font(400, $font-size, $font-main, $line-height);
+    letter-spacing: 0.55px;
+    color: #808080;
+  }
+  .pet-box-title {
+    margin-bottom: 4px;
+    @include font(900, 20px, $font-heading, $line-height-heading);
+    letter-spacing: 0.6px;
+  }
+
+  .question-box {
+    letter-spacing: 0.55px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+
+  .section-facebook {
+
+  }
+  a.fb-invite-link {
+    display: block;
+    width: 100%;
+    min-height: 70px;
+    color: $white;
+    text-align: center;
+    border-top: 2px solid #fff;
+    background-color: #545454;
+    p {
+      display: none;
+    }
+    .fa {
+      padding-top: 18px;
+      font-size: 32px;
+      color: #fff;
+    }
+    &:hover {
+      background-color: #424141;
+    }
+  }
+
+  .facebook-list {
+    overflow: hidden;
+    > li {
+      > ul {
+        > li {
+          float: left;
+          position: relative;
+          width: 16.667%;
+          padding-bottom: 16.667%;
+        }
+      }
+    }
+  }
+  .facebook-img-box {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      opacity: 0;
+      z-index: 105;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      @include transition($duration);
+    }
+    img {
+      position: absolute;
+      z-index: 100;
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      @include css3-prefix('transform', 'translate(-50%, -50%) scale(1)');
+      @include css3-prefix('transition-duration', '0.35s');
+    }
+    &:hover {
+      img {
+        @include css3-prefix('transform', 'translate(-50%, -50%) scale(1.5)');
+      }
+      .facebook-hover-text {
+        opacity: 1;
+      }
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  .facebook-hover-text {
+    position: absolute;
+    opacity: 0;
+    z-index: 110;
+    display: block;
+    width: calc(100% - 20px);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #101010;
+    @include font(400, $font-size, $font-heading, $line-height);
+    @include css3-prefix('transform', 'translate(-50%, -50%)');
+    @include transition($duration);
+  }
 

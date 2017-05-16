@@ -105,6 +105,39 @@ img {
     }
   }
 }
+
+a.btn, .btn {
+  position: relative;
+  display: inline-block;
+  max-width: 250px;
+  width: 100%;
+  letter-spacing: 1.6px;
+  margin: 0;
+  padding: 14px 20px 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  background-color: #005AFF;
+  border: 2px solid #005AFF;
+  @include border-radius(2em);
+  @include font(900, 16px, $font-heading, 1.25);
+  cursor: pointer;
+  @include transition($duration-link);
+  &:hover {
+    color: #005AFF;
+    background-color: transparent;
+  }
+  &.inverse {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+    &:hover {
+      color: #005AFF;
+      background-color: $white;
+    }
+  }
+}
 a.btn-play,
 .btn-play {
   position: relative;
