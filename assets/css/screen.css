@@ -1440,6 +1440,8 @@ a.fb-invite-link {
     position: relative;
     width: 16.666%;
     padding-bottom: 16.666%; }
+    .facebook-list > li:nth-child(6n+1) {
+      clear: both; }
 
 .facebook-img-box {
   position: absolute;
