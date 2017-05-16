@@ -11,6 +11,16 @@
 
 @media all and (max-width: 1280px) {
 ///!!!!!!
+  .half-box {
+    max-width: 400px;
+  }
+  .pet-img {
+    float: left;
+  }
+  .pet-box-text {
+    overflow: hidden;
+    display: block;
+  }
 }
 
 @media all and (max-width: 1199px) {
@@ -18,11 +28,33 @@
 }
 
 @media all and (max-width: 1080px) {
-
+  .container.hero-top {
+    padding: 0;
+  }
+  .hero-title {
+    margin-top: 60px;
+    margin-left: 160px;
+  }
+  .nav {
+    .container {
+      overflow: hidden;
+      padding: 0;
+    }
+    ul {
+      margin: 0;
+      > li {
+        a {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1024px) {
 //!!!!
+
 }
 
 @media all and (max-width: 991px) {
@@ -57,6 +89,62 @@
   .top-nav {
     display: none;
   }
+  .facebook-list {
+    > li {
+      width: 25%;
+      padding-bottom: 25%;
+      &:nth-child(6n+1) {
+        clear: none;
+      }
+      &:nth-child(4n+1) {
+        clear: both;
+      }
+    }
+  }
+  .half-box {
+    margin: 0 auto;
+    &.right{
+      float: none;
+      margin-bottom: 51px;
+    }
+  }
+
+  .half-box.right a.btn,
+  .half-box.right .btn {
+    display: none;
+  }
+  .pet-box {
+    margin-top: 32px;
+  }
+  .pet-img {
+    margin-right: 16px;
+  }
+  .section-questions {
+    padding-bottom: 61px;
+  }
+  .title {
+    &.home-title {
+      margin-bottom: 14px;
+      font-size: 17px;
+      .half-box & {
+        margin-left: 0;
+      }
+    }
+    &.home-subtitle {
+      font-size: 17px;
+    }
+  }
+  .pet-box-title {
+    margin-bottom: 1px;
+    font-size: 16px;
+  }
+  .question-box {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+  .pet-box-text {
+    font-size: 14px;
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -64,16 +152,6 @@
 }
 
 @media all and (max-width: 860px) {
-  .weather-alert {
-    padding-top: 32px;
-    font-size: 18px;
-    p {
-      strong {
-        display: inline-block;
-        width: 100%;
-      }
-    }
-  }
 }
 
 @media all and (max-width: 790px) {
@@ -82,6 +160,14 @@
 
 @media all and (max-width: 768px) {
 //!!!!
+  .facebook-list {
+    display: none;
+  }
+  a.fb-invite-link {
+    p {
+      display: block;
+    }
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -99,7 +185,16 @@
 }
 
 @media all and (max-width: 640px) {
-
+  .weather-alert {
+    padding-top: 32px;
+    font-size: 18px;
+    p {
+      strong {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 600px) {

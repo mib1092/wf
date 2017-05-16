@@ -408,58 +408,74 @@ a.btn-play,
   right: 0;
   height: 0;
   width: 0;
-  top: 66px;
+  top: 0;
   -webkit-transition-delay: 0.35s;
+  -khtml-transition-delay: 0.35s;
   -moz-transition-delay: 0.35s;
+  -ms-transition-delay: 0.35s;
   -o-transition-delay: 0.35s;
   transition-delay: 0.35s; }
-  .admin-bar .mobile-menu-wrap {
-    top: 108px; }
   .mobile-menu-wrap.showing {
     height: 100%;
     width: 100%;
     -webkit-transition-delay: 0s;
+    -khtml-transition-delay: 0s;
     -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s; }
 
 .mobile-menu-overlay {
   position: absolute;
   z-index: 1;
-  right: 0;
+  left: 0;
+  top: 66px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   opacity: 0;
-  -webkit-transition: opacity 0.35s;
-  -moz-transition: opacity 0.35s;
-  -o-transition: opacity 0.35s;
-  transition: opacity 0.35s; }
+  -webkit-transition: opacity  0.35s;
+  -khtml-transition: opacity  0.35s;
+  -moz-transition: opacity  0.35s;
+  -ms-transition: opacity  0.35s;
+  -o-transition: opacity  0.35s;
+  transition: opacity  0.35s; }
   .showing .mobile-menu-overlay {
     opacity: 1; }
 
 .mobile-menu-box {
   position: absolute;
-  width: 100%;
+  overflow: auto;
+  width: 370px;
+  max-width: 80%;
   height: 100%;
-  right: -100%;
+  left: -400px;
   z-index: 2;
-  padding-bottom: 100px;
-  background-color: black;
-  -webkit-transition: right 0.35s;
-  -moz-transition: right 0.35s;
-  -o-transition: right 0.35s;
-  transition: right 0.35s;
-  overflow: auto; }
+  top: 66px;
+  padding-top: 0;
+  background-color: #A31716;
+  -webkit-transition: right  0.35s;
+  -khtml-transition: right  0.35s;
+  -moz-transition: right  0.35s;
+  -ms-transition: right  0.35s;
+  -o-transition: right  0.35s;
+  transition: right  0.35s;
+  -webkit-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+  -khtml-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+  -moz-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+  -ms-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+  -o-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+  box-shadow: -10px 10px 30px rgba(0,0,0,0.2); }
   .showing .mobile-menu-box {
-    right: 0; }
+    left: 0; }
 
 .mobile-menu-toggle {
-  position: absolute;
+  position: fixed;
+  z-index: 99999;
   left: 0;
   top: 0;
-  height: 65px;
-  width: 65px;
+  height: 66px;
+  width: 66px;
   vertical-align: middle;
   cursor: pointer;
   font-size: 26px; }
@@ -471,19 +487,22 @@ a.btn-play,
     content: '';
     cursor: pointer;
     height: 4px;
-    width: 24px;
-    background-color: white;
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -o-transition: all 0.35s;
-    transition: all 0.35s; }
+    width: 29px;
+    background-color: #ffffff;
+    -webkit-transition: all  0.35s;
+    -khtml-transition: all  0.35s;
+    -moz-transition: all  0.35s;
+    -ms-transition: all  0.35s;
+    -o-transition: all  0.35s;
+    transition: all  0.35s; }
   .mobile-menu-toggle span {
     z-index: 999999;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .mobile-menu-toggle span:before {
@@ -493,21 +512,23 @@ a.btn-play,
   .mobile-menu-toggle.active span {
     background-color: transparent; }
   .mobile-menu-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -khtml-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     top: 0;
-    background-color: #f7b940; }
+    background-color: #ffffff; }
   .mobile-menu-toggle.active span:after {
+    -webkit-transform: rotate(-45deg);
+    -khtml-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     bottom: 0;
-    background-color: #f7b940; }
+    background-color: #ffffff; }
 
 .top-navbar .container {
   max-width: 1170px; }
@@ -589,6 +610,10 @@ a.btn-play,
       position: relative;
       display: inline-block;
       width: 100%;
+      font: 900 26px "Montserrat";
+      line-height: 1.25;
+      color: #ffffff;
+      text-decoration: none;
       text-transform: uppercase;
       padding: 15px 25px 13px; }
 
@@ -1524,6 +1549,32 @@ a.fb-invite-link {
   transition: 0.35s; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (max-width: 1280px) {
+  .half-box {
+    max-width: 400px; }
+
+  .pet-img {
+    float: left; }
+
+  .pet-box-text {
+    overflow: hidden;
+    display: block; } }
+@media all and (max-width: 1080px) {
+  .container.hero-top {
+    padding: 0; }
+
+  .hero-title {
+    margin-top: 60px;
+    margin-left: 160px; }
+
+  .nav .container {
+    overflow: hidden;
+    padding: 0; }
+  .nav ul {
+    margin: 0; }
+    .nav ul > li a {
+      padding-left: 40px;
+      padding-right: 40px; } }
 @media all and (max-width: 991px) {
   .wrapper {
     padding-top: 66px; }
@@ -1554,8 +1605,60 @@ a.fb-invite-link {
     min-height: 66px; }
 
   .top-nav {
-    display: none; } }
-@media all and (max-width: 860px) {
+    display: none; }
+
+  .facebook-list > li {
+    width: 25%;
+    padding-bottom: 25%; }
+    .facebook-list > li:nth-child(6n+1) {
+      clear: none; }
+    .facebook-list > li:nth-child(4n+1) {
+      clear: both; }
+
+  .half-box {
+    margin: 0 auto; }
+    .half-box.right {
+      float: none;
+      margin-bottom: 51px; }
+
+  .half-box.right a.btn,
+  .half-box.right .btn {
+    display: none; }
+
+  .pet-box {
+    margin-top: 32px; }
+
+  .pet-img {
+    margin-right: 16px; }
+
+  .section-questions {
+    padding-bottom: 61px; }
+
+  .title.home-title {
+    margin-bottom: 14px;
+    font-size: 17px; }
+    .half-box .title.home-title {
+      margin-left: 0; }
+  .title.home-subtitle {
+    font-size: 17px; }
+
+  .pet-box-title {
+    margin-bottom: 1px;
+    font-size: 16px; }
+
+  .question-box {
+    margin-bottom: 22px;
+    font-size: 14px; }
+
+  .pet-box-text {
+    font-size: 14px; } }
+@media all and (max-width: 768px) {
+  .facebook-list {
+    display: none; }
+
+  a.fb-invite-link p {
+    display: block; } }
+@media all and (max-width: 640px) {
   .weather-alert {
     padding-top: 32px;
     font-size: 18px; }

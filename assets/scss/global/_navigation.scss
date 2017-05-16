@@ -105,6 +105,9 @@
       position: relative;
       display: inline-block;
       width: 100%;
+      @include font(900, 26px, $font-heading, $line-height-heading);
+      color: $white;
+      text-decoration: none;
       text-transform: uppercase;
       padding: 15px 25px 13px;
     }
