@@ -375,7 +375,7 @@
           top: 50%;
           left: 50%;
           @include css3-prefix('transform', ' translate(-50%, -50%)');
-          @include bg(center, cover, no-repeat);
+          @include bg(center, contain, no-repeat);
         }
         a.btn, .btn {
           max-width: 192px;

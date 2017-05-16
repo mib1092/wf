@@ -1159,7 +1159,7 @@ img.mfp-img {
         -o-transform:  translate(-50%, -50%);
         transform:  translate(-50%, -50%);
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat; }
       .plan-list > li .plan-box a.btn, .plan-list > li .plan-box .btn {
         max-width: 192px;
