@@ -8,7 +8,28 @@
   .home & {
     display: none;
   }
+  overflow: hidden;
+  padding-left: 29px;
+  > ul {
+    > li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        padding: 10px 16px 10px;
+        text-transform: uppercase;
+        @include font(400, $font-size-sm,$font-reserve, $line-height-heading);
+        text-decoration: none;
+        color: $color-nav-small;
+      }
+    }
+  }
 }
+
+.top-nav li.active a,
+.top-nav li a:hover {
+  color: $white
+}
+
 
 .nav {
   .container {
@@ -62,10 +83,30 @@
         color: $white;
         letter-spacing: 0.6px;
         text-decoration: none;
-        &:hover {
-          background-color: rgba(2, 2, 138, 0.8);
-        }
+        //&:hover {
+        //  background-color: rgba(2, 2, 138, 0.8);
+        //}
       }
+    }
+  }
+}
+
+.nav li.active a,
+.nav li a:hover {
+  background-color: rgba(2, 2, 138, 0.8);
+}
+
+
+.mobile-menu {
+  padding-bottom: 5px;
+  > li {
+    position: relative;
+    a {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 15px 25px 13px;
     }
   }
 }
