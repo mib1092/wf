@@ -1983,6 +1983,7 @@ a.fb-invite-link {
     letter-spacing: 0.5px; }
 
   .section-plan {
+    margin-top: 50px;
     padding-bottom: 100px;
     background-image: url(../../img/watercolor_mobile_bg.png);
     background-position: top center;
@@ -2036,6 +2037,15 @@ a.fb-invite-link {
   .half-box.right {
     max-width: 350px; } }
 @media all and (max-width: 767px) {
+  .nav .container {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1000; }
+
+  .section-plan {
+    margin-top: 0; }
+
   .nav {
     padding-bottom: 20px;
     background-color: rgba(2, 2, 138, 0.8); }
