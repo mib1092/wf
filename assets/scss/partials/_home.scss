@@ -372,6 +372,10 @@
         margin-bottom: 50px;
       }
     }
+    &.subtitle {
+      font-size: $font-size-h2;
+      letter-spacing: -0.5px;
+    }
     &.home-title {
       margin-bottom: 24px;
       font-size: 38px;

@@ -124,7 +124,9 @@
   .top-nav {
     display: none;
   }
-
+  .hero {
+    background-size: cover;
+  }
   .facebook-list {
     > li {
       width: 25%;
@@ -156,6 +158,8 @@
       > li {
         a {
           font-size: 17px;
+          padding-left: 10px;
+          padding-right: 10px;
         }
       }
     }
@@ -166,6 +170,7 @@
       margin-bottom: 14px;
       font-size: 17px;
       .half-box & {
+        text-transform: uppercase;
         margin-left: 0;
       }
     }
@@ -177,6 +182,11 @@
         letter-spacing: 1.4px;
       }
     }
+  }
+  .section-plan .title.home-subtitle {
+    max-width: 290px;
+    margin: 0 auto 16px;
+    text-align: left;
   }
   .pet-box-title {
     margin-bottom: 1px;
@@ -302,7 +312,7 @@
   }
   .section-plan {
     padding-bottom: 100px;
-    background-image: url(../../img/watercolor-001.png);
+    background-image: url(../../img/watercolor_mobile_bg.png);
     @include bg(top center, contain, no-repeat);
   }
   .plan-list {

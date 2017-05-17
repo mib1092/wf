@@ -45,7 +45,7 @@
             right: -1px;
             top: 15px;
             @include transition($duration);
-            //@include css3-prefix('transform', ' translate(0, -50%)');
+            @include css3-prefix('transform-origin', '50% 50%');
           }
           &.active {
             &:after {
