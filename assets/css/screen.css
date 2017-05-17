@@ -1864,11 +1864,12 @@ a.fb-invite-link {
     font-size: 14px; }
 
   .weather-alert {
-    padding-top: 32px;
+    padding-top: 28px;
     font-size: 18px; }
     .weather-alert p strong {
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      padding-right: 0; }
 
   .hero-info-wrap,
   .hero-title {
