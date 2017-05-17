@@ -2067,7 +2067,8 @@ a.fb-invite-link {
     background-color: #ffffff; }
     .hero:after {
       background-color: #FFFFFF;
-      background-image: none; }
+      background-image: none;
+      height: 50px; }
 
   .container.hero-bottom-wrap {
     background-color: #ffffff; }
@@ -2079,7 +2080,7 @@ a.fb-invite-link {
     display: table;
     width: 267px;
     margin: 0 auto;
-    padding-bottom: 60px; }
+    padding-bottom: 20px; }
 
   .facebook-box {
     display: table-header-group; }
