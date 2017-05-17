@@ -532,9 +532,9 @@
     }
   }
   .icons-list {
-    max-width: 352.5px;
+    //max-width: 352.5px;
     img {
-      max-width: 100%;
+      max-width: 352.5px;
       margin-right: 15px;
       &:last-of-type {
         margin-right: 0;

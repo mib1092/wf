@@ -1462,13 +1462,11 @@ img.mfp-img {
     .half-box.right a.btn, .half-box.right .btn {
       margin-top: 4px; }
 
-.icons-list {
-  max-width: 352.5px; }
-  .icons-list img {
-    max-width: 100%;
-    margin-right: 15px; }
-    .icons-list img:last-of-type {
-      margin-right: 0; }
+.icons-list img {
+  max-width: 352.5px;
+  margin-right: 15px; }
+  .icons-list img:last-of-type {
+    margin-right: 0; }
 
 .pet-box {
   margin-top: 44px;
@@ -1614,6 +1612,85 @@ a.fb-invite-link {
   -o-transition: 0.35s;
   transition: 0.35s; }
 
+.section-faqs {
+  padding-bottom: 140px; }
+
+.container-box {
+  max-width: 782px; }
+
+.accordion-list > li {
+  position: relative;
+  border-bottom: 1px solid #005aff;
+  -webkit-transition: 0.35s;
+  -khtml-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s; }
+  .accordion-list > li:last-child {
+    margin-bottom: 0;
+    border-bottom: none; }
+  .accordion-list > li h2 {
+    position: relative;
+    padding: 23px 35px 17px 0;
+    color: #005aff;
+    font: 900 28px "Montserrat";
+    line-height: 1.25;
+    letter-spacing: 0.75px;
+    -webkit-transition: 0.35s;
+    -khtml-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+    cursor: pointer; }
+    .accordion-list > li h2:after {
+      position: absolute;
+      content: '\f107';
+      font-family: 'FontAwesome';
+      font-size: 42px;
+      color: #005aff;
+      right: -1px;
+      top: 15px;
+      -webkit-transition: 0.35s;
+      -khtml-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s; }
+    .accordion-list > li h2.active:after {
+      top: 5px;
+      -webkit-transform: rotate(-180deg);
+      -khtml-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
+
+.accordion-box-content {
+  display: none;
+  color: #5d5d5d;
+  margin-top: -12px;
+  padding: 0 80px 15px 2px;
+  font: 400 18px "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  word-spacing: 0.2px; }
+  .accordion-box-content > * {
+    margin-bottom: 20px; }
+    .accordion-box-content > *:last-child {
+      margin-bottom: 0; }
+  .accordion-box-content ul {
+    margin-left: 20px; }
+    .accordion-box-content ul li {
+      list-style-type: decimal; }
+  .accordion-box-content ol {
+    margin-left: 20px; }
+    .accordion-box-content ol li {
+      list-style-type: disc; }
+  .accordion-box-content li {
+    margin-bottom: 5px; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {
   .nav ul > li a {
@@ -1622,6 +1699,9 @@ a.fb-invite-link {
 @media all and (max-width: 1280px) {
   .half-box {
     max-width: 400px; }
+
+  .icons-list img {
+    max-width: 100%; }
 
   .pet-img {
     float: left; }
@@ -1833,7 +1913,18 @@ a.fb-invite-link {
     display: none; }
 
   .plan-list-mob {
-    display: block; } }
+    display: block; }
+
+  .accordion-list > li h2 {
+    font-size: 17px; }
+    .accordion-list > li h2:after {
+      font-size: 30px; }
+
+  .accordion-box-content {
+    padding-right: 50px;
+    font-size: 14px; }
+    .accordion-box-content > * {
+      margin-bottom: 12px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -1923,5 +2014,8 @@ a.fb-invite-link {
   .hero-box {
     padding-left: 0;
     padding-right: 0; } }
+@media all and (max-width: 420px) {
+  .accordion-box-content {
+    padding-right: 25px; } }
 
 /*# sourceMappingURL=screen.css.map */
