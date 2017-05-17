@@ -63,7 +63,7 @@
   top: 66px;
   padding-top: 0;
   background-color: $bg-color-red;
-  @include css3-prefix('transition', 'right '$duration);
+  @include css3-prefix('transition', 'left' $duration);
   @include css3-prefix('box-shadow', '-10px 10px 30px rgba(0,0,0,0.2)');
   .showing & {
     left: 0;

@@ -6,11 +6,20 @@
 }
 
 @media all and (max-width: 1400px) {
-
+  .nav {
+    ul {
+      > li {
+        a {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1280px) {
-///!!!!!!
+  ///!!!!!!
   .half-box {
     max-width: 400px;
   }
@@ -21,19 +30,8 @@
     overflow: hidden;
     display: block;
   }
-}
-
-@media all and (max-width: 1199px) {
-
-}
-
-@media all and (max-width: 1080px) {
-  .container.hero-top {
-    padding: 0;
-  }
   .hero-title {
-    margin-top: 60px;
-    margin-left: 160px;
+    padding-left: 103px;
   }
   .nav {
     .container {
@@ -50,6 +48,25 @@
       }
     }
   }
+}
+
+@media all and (max-width: 1199px) {
+  .plan-list {
+    > li {
+      width: 34%;
+    }
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .container.hero-top {
+    padding: 0;
+  }
+  .hero-title {
+    padding-top: 60px;
+    padding-left: 160px;
+  }
+
 }
 
 @media all and (max-width: 1024px) {
@@ -101,13 +118,6 @@
       }
     }
   }
-  .half-box {
-    margin: 0 auto;
-    &.right{
-      float: none;
-      margin-bottom: 51px;
-    }
-  }
 
   .half-box.right a.btn,
   .half-box.right .btn {
@@ -122,6 +132,16 @@
   .section-questions {
     padding-bottom: 61px;
   }
+  .nav {
+    ul {
+      > li {
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
   .title {
     &.home-title {
       margin-bottom: 14px;
@@ -132,6 +152,11 @@
     }
     &.home-subtitle {
       font-size: 17px;
+      .section-plan & {
+        margin-bottom: 16px;
+        color: $white;
+        letter-spacing: 1.4px;
+      }
     }
   }
   .pet-box-title {
@@ -145,6 +170,127 @@
   .pet-box-text {
     font-size: 14px;
   }
+  .weather-alert {
+    padding-top: 32px;
+    font-size: 18px;
+    p {
+      strong {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  .hero-info-wrap,
+  .hero-title {
+    display: block;
+    width: 100%;
+  }
+    .hero-info-box {
+      float: none;
+      max-width: 530px;
+      margin: 0 auto;
+    }
+      .hero-box {
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+        .hero-info-list {
+          > li {
+            margin-bottom: 12px;
+          }
+        }
+          .hero-box-text {
+            padding-top: 8px;
+            * {
+              margin-bottom: 4px;
+            }
+            .pm {
+              font-size: 9px;
+            }
+          }
+          .hero-box-btn {
+            width: 180px;
+            padding: 0 17px 0 2px;
+          }
+  .container.hero-top {
+    overflow: hidden;
+    min-height: 100px;
+  }
+  .hero-title {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 42px;
+    padding-left: 0;
+    max-width: 175px;
+    h1 {
+      font-size: 37px;
+      > span {
+        letter-spacing: 0.6px;
+        margin-bottom: 21px;
+        &.blue_bg {
+          &:before {
+            left: -142px;
+            top: -16px;
+            width: 517px;
+            height: 75px;
+          }
+        }
+        &.red_bg {
+          margin-left: -1px;
+          margin-bottom: 26px;
+          letter-spacing: 0.2px;
+          &:before {
+            left: -190px;
+            top: -16px;
+            width: 503px;
+            height: 71px;
+          }
+        }
+        &.grey_bg {
+          margin-left: -2px;
+          font-size: 11.5px;
+          letter-spacing: 0.8px;
+          &:before {
+            left: -102px;
+            top: -31px;
+            width: 383px;
+            height: 62px;
+          }
+        }
+      }
+    }
+  }
+  .hero-box-btn {
+    a.btn,
+    .btn {
+      font-size: 17px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      &.small {
+        max-width: 144px;
+      }
+    }
+  }
+  .hero-box-text {
+    font-size: 15px;
+  }
+  .hero-box-info {
+    margin-top: 0;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .section-plan {
+    padding-bottom: 100px;
+    background-image: url(../../img/watercolor-001.png);
+    @include bg(top center, contain, no-repeat);
+  }
+  .plan-list {
+    display: none;
+  }
+  .plan-list-mob {
+    display: block;
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -152,6 +298,16 @@
 }
 
 @media all and (max-width: 860px) {
+  .container.hero-bottom-wrap {
+    overflow: hidden;
+  }
+  .experience-box {
+    float: right;
+  }
+
+  .facebook-box {
+    max-width: 360px;
+  }
 }
 
 @media all and (max-width: 790px) {
@@ -160,18 +316,72 @@
 
 @media all and (max-width: 768px) {
 //!!!!
-  .facebook-list {
-    display: none;
-  }
-  a.fb-invite-link {
-    p {
-      display: block;
-    }
+  .half-box.right {
+    max-width: 350px;
   }
 }
 
 @media all and (max-width: 767px) {
+  .facebook-list,
+  .experience-box,
+  .facebook-box {
+    display: none;
+  }
 
+  a.fb-invite-link {
+    padding-bottom: 50px;
+    p {
+      display: block;
+    }
+    .fa {
+      padding-top: 37px;
+      font-size: 36px;
+    }
+  }
+
+  .nav {
+    ul {
+      position: relative;
+      background-color: rgba(0, 1, 197, 0.8);
+      &:after {
+        position: absolute;
+        content: '';
+        width: calc(100% + 4px);
+        height: 1px;
+        left: -2px;
+        right: auto;
+        top: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-image: none;
+      }
+      > li {
+       width: 49%;
+        &:after {
+          content: none;
+        }
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .video-box {
+    float: none;
+    margin: 40px auto 0;
+    left: 0;
+    @include css3-prefix('transform', 'rotate(0)');
+  }
+  a.btn-play,
+  .btn-play {
+    &:after {
+      margin-left: auto;
+      @include css3-prefix('transform', 'rotate(0) translate(-50%, -50%)');
+    }
+    &:before {
+      margin-left: auto;
+      margin-top: auto;
+    }
+  }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
@@ -185,14 +395,13 @@
 }
 
 @media all and (max-width: 640px) {
-  .weather-alert {
-    padding-top: 32px;
-    font-size: 18px;
-    p {
-      strong {
-        display: inline-block;
-        width: 100%;
-      }
+  .half-box {
+    margin: 0 auto;
+    &.right{
+      float: none;
+      margin-bottom: 51px;
+      max-width: 400px;
+      padding-left: 0;
     }
   }
 }
@@ -202,11 +411,20 @@
 }
 
 @media all and (max-width: 560px) {
-
+  .section-plan {
+    background-size: cover;
+  }
 }
 
 @media all and (max-width: 480px) {
-
+  .hero-box-btn {
+    width: 150px;
+    padding: 0 17px 0 0;
+  }
+  .hero-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media all and (max-width: 420px) {
@@ -214,7 +432,6 @@
 }
 
 @media all and (max-width: 380px) {
-
 }
 
 @media all and (max-width: 360px) {
