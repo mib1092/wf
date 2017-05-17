@@ -609,7 +609,8 @@ a.btn-play,
     background-image: url(../../img/hero_nav_bg_r.png); }
   .nav ul > li {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
     .nav ul > li:after {
       position: absolute;
       content: '';
@@ -1859,11 +1860,6 @@ a.fb-invite-link {
   .section-questions {
     padding-bottom: 61px; }
 
-  .nav ul > li a {
-    font-size: 17px;
-    padding-left: 10px;
-    padding-right: 10px; }
-
   .title.home-title {
     margin-bottom: 14px;
     font-size: 17px; }
@@ -2023,7 +2019,10 @@ a.fb-invite-link {
 
   .section-faqs {
     padding-top: 20px;
-    padding-bottom: 80px; } }
+    padding-bottom: 80px; }
+
+  .nav ul > li a {
+    font-size: 17px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -2037,10 +2036,64 @@ a.fb-invite-link {
   .half-box.right {
     max-width: 350px; } }
 @media all and (max-width: 767px) {
-  .facebook-list,
-  .experience-box,
-  .facebook-box {
+  .nav {
+    padding-bottom: 20px;
+    background-color: rgba(2, 2, 138, 0.8); }
+    .nav ul {
+      background-color: rgba(2, 2, 138, 0); }
+      .nav ul > li a {
+        position: relative;
+        z-index: 100;
+        font-size: 17px;
+        padding-left: 10px;
+        padding-right: 10px; }
+    .hero .nav {
+      position: relative; }
+      .hero .nav:after {
+        position: absolute;
+        z-index: 30;
+        content: '';
+        width: 100%;
+        height: 91px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/transition_white_v2.png);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+
+  .hero {
+    background-color: #ffffff; }
+    .hero:after {
+      background-color: #FFFFFF;
+      background-image: none; }
+
+  .container.hero-bottom-wrap {
+    background-color: #ffffff; }
+
+  .facebook-list {
     display: none; }
+
+  .hero-bottom {
+    display: table;
+    width: 267px;
+    margin: 0 auto;
+    padding-bottom: 60px; }
+
+  .facebook-box {
+    display: table-header-group; }
+    .facebook-box > ul > li a {
+      color: #5d5d5d; }
+
+  .experience-box {
+    padding: 40px 0 40px;
+    display: table-cell;
+    color: #5d5d5d;
+    opacity: 1; }
+
+  .video-box {
+    display: table-footer-group; }
 
   a.fb-invite-link {
     padding-bottom: 50px; }
@@ -2051,8 +2104,7 @@ a.fb-invite-link {
       font-size: 36px; }
 
   .nav ul {
-    position: relative;
-    background-color: rgba(0, 1, 197, 0.8); }
+    position: relative; }
     .nav ul:after {
       position: absolute;
       content: '';

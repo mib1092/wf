@@ -84,7 +84,7 @@
     > li {
       position: relative;
       display: inline-block;
-
+      vertical-align: middle;
       &:after {
         position: absolute;
         content: '';
