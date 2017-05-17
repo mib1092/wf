@@ -1,5 +1,20 @@
+.page-title-box {
+  margin-top: 56px;
+}
+  .page-desc {}
+  .title-page {
+    margin-left: 2px;
+    @include font(900, $font-size-h1, $font-heading, $line-height-heading);
+    letter-spacing: 3px;
+    color: $white;
+  }
+
 .section-faqs {
+  padding-top: 62px;
   padding-bottom: 140px;
+  .container {
+    max-width: 1164px;
+  }
 }
   .container-box {
     max-width: 782px;

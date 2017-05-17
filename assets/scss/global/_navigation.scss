@@ -5,11 +5,34 @@
 
 }
 .top-nav {
-  .home & {
+  &.disable {
     display: none;
   }
   overflow: hidden;
   padding-left: 29px;
+  .inner-nav & {
+    padding-left: 0;
+    ul {
+      //display: table;
+      width: 100%;
+      margin: 0 -30px;
+      //table-layout: fixed;
+      > li {
+        //display: table-cell;
+        //text-align: center;
+        a {
+          width: 100%;
+          padding: 10px 30px 10px;
+          @include font(800, $font-size, $font-heading, $line-height-heading);
+          letter-spacing: 2.1px;
+          color: $white;
+          &:hover {
+            color: $color-nav-small;
+          }
+        }
+      }
+    }
+  }
   > ul {
     > li {
       display: inline-block;

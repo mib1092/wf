@@ -61,6 +61,19 @@
       width: 34%;
     }
   }
+  .top-nav {
+    .inner-nav & {
+      ul {
+        margin: 0 -18px;
+        > li {
+          a {
+            padding: 10px 18px 10px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1080px) {
@@ -111,6 +124,7 @@
   .top-nav {
     display: none;
   }
+
   .facebook-list {
     > li {
       width: 25%;
@@ -314,6 +328,21 @@
       margin-bottom: 12px;
 
     }
+  }
+  .inner-nav {
+    padding-bottom: 28px;
+  }
+  .title-page {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+  .page-title-box {
+    margin-top: 0;
+    margin-left: 18px;
+  }
+  .section-faqs {
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 }
 

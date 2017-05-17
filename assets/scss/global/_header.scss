@@ -1,6 +1,14 @@
 .top-navbar {
   overflow: hidden;
-  background-color: $bg-color-red;
+  background: rgba(145,19,19,1);
+  background: -moz-linear-gradient(left, rgba(145,19,19,1) 0%, rgba(163,23,23,1) 20%, rgba(189,28,28,1) 50%, rgba(163,23,23,1) 80%, rgba(145,19,19,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(145,19,19,1)), color-stop(20%, rgba(163,23,23,1)), color-stop(50%, rgba(189,28,28,1)), color-stop(80%, rgba(163,23,23,1)), color-stop(100%, rgba(145,19,19,1)));
+  background: -webkit-linear-gradient(left, rgba(145,19,19,1) 0%, rgba(163,23,23,1) 20%, rgba(189,28,28,1) 50%, rgba(163,23,23,1) 80%, rgba(145,19,19,1) 100%);
+  background: -o-linear-gradient(left, rgba(145,19,19,1) 0%, rgba(163,23,23,1) 20%, rgba(189,28,28,1) 50%, rgba(163,23,23,1) 80%, rgba(145,19,19,1) 100%);
+  background: -ms-linear-gradient(left, rgba(145,19,19,1) 0%, rgba(163,23,23,1) 20%, rgba(189,28,28,1) 50%, rgba(163,23,23,1) 80%, rgba(145,19,19,1) 100%);
+  background: linear-gradient(to right, rgba(145,19,19,1) 0%, rgba(163,23,23,1) 20%, rgba(189,28,28,1) 50%, rgba(163,23,23,1) 80%, rgba(145,19,19,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#911313', endColorstr='#911313', GradientType=1 );
+
 }
 
 .logo {
@@ -116,5 +124,15 @@
     @include css3-prefix('transform', 'rotate(-45deg)');
     bottom: 0;
     background-color: $white;
+  }
+}
+
+.inner-nav {
+  padding-top: 26px;
+  padding-bottom: 52px;
+  background-image: url(../../img/header_bg.png);
+  @include bg(bottom center, cover, no-repeat);
+  .container {
+    max-width: 1170px;
   }
 }
