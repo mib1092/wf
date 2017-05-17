@@ -1203,7 +1203,7 @@ img.mfp-img {
   -ms-transform: rotate(-8.6deg);
   -o-transform: rotate(-8.6deg);
   transform: rotate(-8.6deg); }
-  .video-box:after {
+  .video-box .video-box-wrap:after {
     position: absolute;
     z-index: 100;
     opacity: 0;
@@ -1219,7 +1219,7 @@ img.mfp-img {
     -ms-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s; }
-  .video-box:hover:after {
+  .video-box .video-box-wrap:hover:after {
     opacity: 1; }
   .video-box img {
     max-width: 100%;
