@@ -1372,6 +1372,7 @@ img.mfp-img {
       opacity: 0.8; }
 
 .plan-list-mob {
+  display: none;
   max-width: 290px;
   margin: 0 auto; }
   .plan-list-mob > li a {
