@@ -1701,21 +1701,27 @@ a.fb-invite-link {
       font-size: 42px;
       color: #005aff;
       right: -1px;
-      top: 15px;
+      top: 50%;
       -webkit-transition: 0.35s;
       -khtml-transition: 0.35s;
       -moz-transition: 0.35s;
       -ms-transition: 0.35s;
       -o-transition: 0.35s;
       transition: 0.35s;
-      -webkit-transform-origin: 50% 50%;
-      -khtml-transform-origin: 50% 50%;
-      -moz-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      -o-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50%;
+      -khtml-transform-origin: 50%;
+      -moz-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+      -o-transform-origin: 50%;
+      transform-origin: 50%;
+      -webkit-transform: translateY(-50%);
+      -khtml-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
     .accordion-list > li h2.active:after {
-      top: 5px;
+      top: 12px;
       -webkit-transform: rotate(-180deg);
       -khtml-transform: rotate(-180deg);
       -moz-transform: rotate(-180deg);
