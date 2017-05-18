@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Source+Sans+Pro" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <link href="assets/css/screen.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -89,7 +90,6 @@
             <div class="container-box">
                 <div class="select-box">
                     <select>
-                        <option data-display="Select"></option>
                         <option value="All_day">All day</option>
                         <option value="Morning">Morning</option>
                         <option value="Afternoon">Afternoon</option>
@@ -97,7 +97,8 @@
                     </select>
 
                     <a href="#" class="see-full">
-                        SEE FULL EVENT SCHEDULE
+                        <span class="see-desktop">SEE FULL EVENT SCHEDULE</span>
+                        <span class="see-mob">FULL EVENT CALENDAR</span>
                     </a>
                 </div>
                 <ul class="event-list">
@@ -373,7 +374,8 @@
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="assets/js/custom/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script src="assets/js/magnifi.js"></script>
+<script src="assets/js/custom/scripts.js"></script>
 </body>
 </html>

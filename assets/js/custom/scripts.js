@@ -22,4 +22,9 @@ $(document).ready(function() {
     $(".accordion-list > li > h2").on('click', function () {
         $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);
     });
+
+    //for select
+    if ($('div').hasClass('select-box')) {
+        $('.select-box select').select2();
+    }
 });
