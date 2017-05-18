@@ -354,6 +354,30 @@
       }
     }
   }
+  .content {
+    * {
+      margin-bottom: 29px;
+      font-size: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    h2 {
+      font-size: 17px;
+    }
+  }
+  .section-fireworks {
+    padding-bottom: 39px;
+  }
+  .section-blockquote {
+    padding-top: 40px;
+  }
+  .blockquote-content {
+    font-size: 14px;
+  }
+  .title.subtitle {
+    font-size: 17px;
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -548,6 +572,16 @@
 @media all and (max-width: 560px) {
   .section-plan {
     background-size: cover;
+  }
+  .blockquote-list {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -37px;
+    > li {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 37px;
+    }
   }
 }
 

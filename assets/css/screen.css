@@ -1811,18 +1811,20 @@ a.fb-invite-link {
 
 .section-fireworks {
   padding-top: 71px;
-  padding-bottom: 70px; }
+  padding-bottom: 79px; }
 
 .section-blockquote {
   padding-top: 82px;
   padding-bottom: 70px; }
 
 .blockquote-list {
-  text-align: center; }
+  text-align: center;
+  margin: 0 -15px -47px; }
   .blockquote-list > li {
     display: inline-block;
     width: 49%;
-    margin-bottom: 40px;
+    padding: 0 15px;
+    margin-bottom: 47px;
     vertical-align: top; }
 
 .blockquote-box {
@@ -1830,10 +1832,84 @@ a.fb-invite-link {
   max-width: 340px; }
 
 .blockquote-content {
-  font-style: italic; }
+  font-family: "Georgia", "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  line-height: 1.6; }
 
 .blockquote-author {
-  font-size: 12px; }
+  display: block;
+  font-size: 12px;
+  margin-top: 9px;
+  letter-spacing: 0.1px; }
+
+.section-all-day {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.select-box {
+  display: none; }
+
+.event-list > li {
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .event-list > li:last-child {
+    margin-bottom: 20px; }
+
+.event-date {
+  float: left;
+  display: inline-block;
+  width: 157px;
+  margin-right: 53px;
+  padding: 14px 10px 14px;
+  font: 900 30px "Montserrat";
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+  background-color: #005aff; }
+  .event-date span {
+    font-size: 16px; }
+
+.event-wrap {
+  overflow: hidden; }
+  .event-wrap .fa-map-marker {
+    padding-left: 18px;
+    font-size: 32px;
+    color: #d0d0d0; }
+
+.event-name {
+  display: inline-block;
+  font: 900 36px "Montserrat";
+  line-height: 1.25;
+  color: #005aff; }
+
+.event-location {
+  position: relative;
+  display: inline-block;
+  padding-left: 46px;
+  font: 500 36px "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
+  line-height: 1.25;
+  color: #005aff; }
+  .event-location:before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 2px;
+    left: 16px;
+    top: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #005aff;
+    -webkit-transform: translate(0, -50%);
+    -khtml-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {
@@ -2100,6 +2176,26 @@ a.fb-invite-link {
     padding-bottom: 80px; }
 
   .nav ul > li a {
+    font-size: 17px; }
+
+  .content * {
+    margin-bottom: 29px;
+    font-size: 14px; }
+    .content *:last-child {
+      margin-bottom: 0; }
+  .content h2 {
+    font-size: 17px; }
+
+  .section-fireworks {
+    padding-bottom: 39px; }
+
+  .section-blockquote {
+    padding-top: 40px; }
+
+  .blockquote-content {
+    font-size: 14px; }
+
+  .title.subtitle {
     font-size: 17px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
@@ -2242,7 +2338,16 @@ a.fb-invite-link {
       padding-left: 0; } }
 @media all and (max-width: 560px) {
   .section-plan {
-    background-size: cover; } }
+    background-size: cover; }
+
+  .blockquote-list {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -37px; }
+    .blockquote-list > li {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 37px; } }
 @media all and (max-width: 480px) {
   .hero-box-btn {
     width: 150px;

@@ -2,6 +2,7 @@
 $font-reserve: 'Source Sans Pro';
 $font-heading: 'Montserrat';
 $font-main: 'ProgramOT-Book', $font-reserve, $font-heading, Arial, sans-serif;
+$font-georgia: 'Georgia', $font-main;
 
 /*fonts-size*/
 $font-size: 18px;
@@ -23,6 +24,7 @@ $bg-color: $white;
 $bg-color-grey: #f0f0f0;
 $bg-color-red: #A31716;
 $bg-color-yellow: #FFBA00;
+$bg-color-blue: #005aff;
 
 /*transition*/
 $duration: 0.35s;
