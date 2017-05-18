@@ -367,6 +367,7 @@
     }
   }
   .section-fireworks {
+    padding-top: 39px;
     padding-bottom: 39px;
   }
   .section-blockquote {
@@ -377,6 +378,39 @@
   }
   .title.subtitle {
     font-size: 17px;
+  }
+  .event-date {
+    width: 78px;
+    padding: 7px 5px 7px;
+    margin-right: 20px;
+    margin-top: 6px;
+  }
+  .event-wrap {
+    padding-top: 0;
+    .fa-map-marker {
+      position: relative;
+      bottom: -2px;
+      font-size: 22px;
+    }
+  }
+  .event-date {
+    font-size: 15px;
+    span {
+      font-size: 8px;
+    }
+  }
+  .event-name {
+    font-size: 18px;
+  }
+  .event-location {
+    font-size: 18px;
+  }
+  .event-content {
+    max-width: 420px;
+    font-size: 14px;
+    > * {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -566,7 +600,54 @@
 }
 
 @media all and (max-width: 600px) {
-
+  .event-date {
+    width: 78px;
+    padding: 7px 5px 7px;
+    margin-right: 20px;
+    margin-top: 6px;
+  }
+  .event-wrap {
+    overflow: visible;
+    position: relative;
+    padding-top: 0;
+    .fa-map-marker {
+      position: absolute;
+      bottom: auto;
+      top: 0;
+      right: 0;
+      font-size: 36px;
+    }
+  }
+  .event-header {
+    overflow: hidden;
+  }
+  .event-list > li {
+    margin-bottom: 9px;
+  }
+  .event-name {
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+  }
+  .event-location {
+    overflow: hidden;
+    display: block;
+    margin-top: -4px;
+    padding-left: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .event-content {
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 20px;
+    max-width: 100%;
+    font-size: 14px;
+    > * {
+      margin-bottom: 8px;
+    }
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -593,6 +674,19 @@
   .hero-box {
     padding-left: 0;
     padding-right: 0;
+  }
+  .section-all-day {
+    .container {
+      padding: 0;
+    }
+  }
+  .event-location,
+  .event-name,
+  .event-content {
+    padding-right: 40px;
+  }
+  .event-wrap .fa-map-marker {
+    right: 35px;
   }
 }
 

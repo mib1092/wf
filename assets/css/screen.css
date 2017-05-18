@@ -1846,13 +1846,24 @@ a.fb-invite-link {
 .section-all-day {
   padding-top: 70px;
   padding-bottom: 70px; }
+  .section-all-day .container-box {
+    max-width: 100%; }
 
-.select-box {
-  display: none; }
+a.see-full,
+.see-full {
+  margin-left: 100px;
+  font: 900 21px "Montserrat";
+  line-height: 1.25;
+  color: #005aff;
+  letter-spacing: 0.9px;
+  text-decoration: none; }
+  a.see-full:hover,
+  .see-full:hover {
+    text-decoration: underline; }
 
 .event-list > li {
   overflow: hidden;
-  margin-bottom: 20px; }
+  margin-bottom: 43px; }
   .event-list > li:last-child {
     margin-bottom: 20px; }
 
@@ -1861,32 +1872,41 @@ a.fb-invite-link {
   display: inline-block;
   width: 157px;
   margin-right: 53px;
-  padding: 14px 10px 14px;
+  padding: 14px 10px 15px;
+  letter-spacing: 0.8px;
   font: 900 30px "Montserrat";
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
   background-color: #005aff; }
   .event-date span {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-left: 3px;
+    letter-spacing: -1px; }
 
 .event-wrap {
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 9px; }
   .event-wrap .fa-map-marker {
     padding-left: 18px;
     font-size: 32px;
     color: #d0d0d0; }
 
+.event-header > a {
+  text-decoration: none; }
+
 .event-name {
   display: inline-block;
   font: 900 36px "Montserrat";
   line-height: 1.25;
+  letter-spacing: 1px;
   color: #005aff; }
 
 .event-location {
   position: relative;
   display: inline-block;
-  padding-left: 46px;
+  padding-left: 39px;
+  letter-spacing: 5px;
   font: 500 36px "ProgramOT-Book", "Source Sans Pro", "Montserrat", Arial, sans-serif;
   line-height: 1.25;
   color: #005aff; }
@@ -1910,6 +1930,19 @@ a.fb-invite-link {
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%); }
+
+.event-content {
+  max-width: 700px;
+  padding-top: 5px;
+  letter-spacing: 0.8px;
+  word-spacing: -1.3px; }
+  .event-content > * {
+    margin-bottom: 23px; }
+    .event-content > *:last-child {
+      margin-bottom: 0; }
+    .event-content > * strong, .event-content > * b {
+      padding-right: 2px;
+      letter-spacing: 2px; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {
@@ -2187,6 +2220,7 @@ a.fb-invite-link {
     font-size: 17px; }
 
   .section-fireworks {
+    padding-top: 39px;
     padding-bottom: 39px; }
 
   .section-blockquote {
@@ -2196,7 +2230,37 @@ a.fb-invite-link {
     font-size: 14px; }
 
   .title.subtitle {
-    font-size: 17px; } }
+    font-size: 17px; }
+
+  .event-date {
+    width: 78px;
+    padding: 7px 5px 7px;
+    margin-right: 20px;
+    margin-top: 6px; }
+
+  .event-wrap {
+    padding-top: 0; }
+    .event-wrap .fa-map-marker {
+      position: relative;
+      bottom: -2px;
+      font-size: 22px; }
+
+  .event-date {
+    font-size: 15px; }
+    .event-date span {
+      font-size: 8px; }
+
+  .event-name {
+    font-size: 18px; }
+
+  .event-location {
+    font-size: 18px; }
+
+  .event-content {
+    max-width: 420px;
+    font-size: 14px; }
+    .event-content > * {
+      margin-bottom: 8px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -2336,6 +2400,52 @@ a.fb-invite-link {
       margin-bottom: 51px;
       max-width: 400px;
       padding-left: 0; } }
+@media all and (max-width: 600px) {
+  .event-date {
+    width: 78px;
+    padding: 7px 5px 7px;
+    margin-right: 20px;
+    margin-top: 6px; }
+
+  .event-wrap {
+    overflow: visible;
+    position: relative;
+    padding-top: 0; }
+    .event-wrap .fa-map-marker {
+      position: absolute;
+      bottom: auto;
+      top: 0;
+      right: 0;
+      font-size: 36px; }
+
+  .event-header {
+    overflow: hidden; }
+
+  .event-list > li {
+    margin-bottom: 9px; }
+
+  .event-name {
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.3px; }
+
+  .event-location {
+    overflow: hidden;
+    display: block;
+    margin-top: -4px;
+    padding-left: 0;
+    font-size: 15px;
+    letter-spacing: 2px; }
+
+  .event-content {
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 20px;
+    max-width: 100%;
+    font-size: 14px; }
+    .event-content > * {
+      margin-bottom: 8px; } }
 @media all and (max-width: 560px) {
   .section-plan {
     background-size: cover; }
@@ -2355,7 +2465,18 @@ a.fb-invite-link {
 
   .hero-box {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .section-all-day .container {
+    padding: 0; }
+
+  .event-location,
+  .event-name,
+  .event-content {
+    padding-right: 40px; }
+
+  .event-wrap .fa-map-marker {
+    right: 35px; } }
 @media all and (max-width: 420px) {
   .accordion-box-content {
     padding-right: 25px; } }
