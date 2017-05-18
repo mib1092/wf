@@ -469,6 +469,18 @@
       font-size: 18px;
     }
   }
+  .select-box {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 200%;
+      height: 1px;
+      left: -50%;
+      bottom: 0;
+      background-color: $bg-color-blue;
+    }
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -713,18 +725,6 @@
     float: right;
     margin-left: 10px;
     top: -3px
-  }
-  .select-box {
-    position: relative;
-    &:after {
-      position: absolute;
-      content: '';
-      width: 200%;
-      height: 1px;
-      left: -50%;
-      bottom: 0;
-      background-color: $bg-color-blue;
-    }
   }
 }
 

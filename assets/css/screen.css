@@ -2448,7 +2448,18 @@ a.see-full,
   .see-more {
     margin-top: 50px; }
     .see-more .title.subtitle {
-      font-size: 18px; } }
+      font-size: 18px; }
+
+  .select-box {
+    position: relative; }
+    .select-box:after {
+      position: absolute;
+      content: '';
+      width: 200%;
+      height: 1px;
+      left: -50%;
+      bottom: 0;
+      background-color: #005aff; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -2641,18 +2652,7 @@ a.see-full,
     max-width: 100px;
     float: right;
     margin-left: 10px;
-    top: -3px; }
-
-  .select-box {
-    position: relative; }
-    .select-box:after {
-      position: absolute;
-      content: '';
-      width: 200%;
-      height: 1px;
-      left: -50%;
-      bottom: 0;
-      background-color: #005aff; } }
+    top: -3px; } }
 @media all and (max-width: 560px) {
   .section-plan {
     background-size: cover; }
