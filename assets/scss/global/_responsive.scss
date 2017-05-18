@@ -535,6 +535,29 @@
   .eat-item .fa-map-marker {
     font-size: 26px;
   }
+  .sponsor-info,
+  .sponsor-list {
+    font-size: 14px;
+  }
+  .sidebar {
+    margin-right: 46px;
+    a.btn, .btn {
+      font-size: 16px;
+    }
+    .description {
+      padding-top: 4px;
+      font-size: 14px;
+    }
+  }
+  .sponsor-list {
+    margin-bottom: 40px;
+  }
+  .content ul > li:before {
+    width: 4px;
+    height: 4px;
+    left: 10px;
+    top: 8px;
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -551,6 +574,13 @@
 
   .facebook-box {
     max-width: 360px;
+  }
+  .sidebar {
+    float: none;
+    margin: 0 auto 30px;
+  }
+  .section-sponsors {
+    padding-top: 37px;
   }
 }
 

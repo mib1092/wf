@@ -2235,6 +2235,83 @@ a.eat-more-info {
   margin-left: 15px;
   letter-spacing: 0.5px; }
 
+.section-sponsors {
+  padding-top: 67px;
+  padding-bottom: 79px; }
+  .section-sponsors .container {
+    max-width: 1182px; }
+  .section-sponsors .container-box {
+    overflow: hidden;
+    max-width: 692px; }
+  .section-sponsors .title.subtitle {
+    margin-bottom: 0; }
+  .section-sponsors .content > * {
+    margin-bottom: 24px; }
+  .section-sponsors .content * {
+    line-height: 1.6; }
+  .section-sponsors .content ul, .section-sponsors .content ol {
+    margin-top: 4px;
+    margin-bottom: 34px; }
+
+.sidebar {
+  float: left;
+  max-width: 256px;
+  margin-top: 7px;
+  margin-right: 106px; }
+  .sidebar a {
+    margin-bottom: 17px; }
+  .sidebar a.btn, .sidebar .btn {
+    max-width: 100%;
+    font-size: 20px;
+    padding-top: 21px;
+    padding-bottom: 19px;
+    letter-spacing: 1.8px; }
+    .sidebar a.btn.revers, .sidebar .btn.revers {
+      padding-bottom: 15px; }
+    .sidebar a.btn span, .sidebar .btn span {
+      display: block;
+      margin-top: -8px;
+      font-size: 11.3px;
+      letter-spacing: 1.2px;
+      font-weight: 200; }
+  .sidebar .description {
+    padding: 24px 40px 10px 9px;
+    letter-spacing: 0.4px; }
+
+.box-sponsor .title.subtitle {
+  margin-bottom: 28px; }
+
+.sponsor-info {
+  font-weight: 500;
+  color: #0b0b0b;
+  letter-spacing: 0.2px; }
+
+.sponsor-list {
+  position: relative;
+  margin-top: 6px;
+  margin-bottom: 60px;
+  padding-top: 16px;
+  -webkit-columns: 250px 2;
+  -moz-columns: 250px 2;
+  columns: 250px 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  text-align: left; }
+  .sponsor-list:after {
+    position: absolute;
+    content: '';
+    max-width: 520px;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: #ececec; }
+  .sponsor-list > li {
+    margin-bottom: 7px;
+    letter-spacing: -0.6px;
+    word-spacing: 1px; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {
   .nav ul > li a {
@@ -2664,7 +2741,28 @@ a.eat-more-info {
     padding-top: 36px; }
 
   .eat-item .fa-map-marker {
-    font-size: 26px; } }
+    font-size: 26px; }
+
+  .sponsor-info,
+  .sponsor-list {
+    font-size: 14px; }
+
+  .sidebar {
+    margin-right: 46px; }
+    .sidebar a.btn, .sidebar .btn {
+      font-size: 16px; }
+    .sidebar .description {
+      padding-top: 4px;
+      font-size: 14px; }
+
+  .sponsor-list {
+    margin-bottom: 40px; }
+
+  .content ul > li:before {
+    width: 4px;
+    height: 4px;
+    left: 10px;
+    top: 8px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -2673,7 +2771,14 @@ a.eat-more-info {
     float: right; }
 
   .facebook-box {
-    max-width: 360px; } }
+    max-width: 360px; }
+
+  .sidebar {
+    float: none;
+    margin: 0 auto 30px; }
+
+  .section-sponsors {
+    padding-top: 37px; } }
 @media all and (max-width: 768px) {
   .half-box.right {
     max-width: 350px; } }
