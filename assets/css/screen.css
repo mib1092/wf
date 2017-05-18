@@ -1845,7 +1845,7 @@ a.fb-invite-link {
 
 .section-all-day {
   padding-top: 43px;
-  padding-bottom: 70px; }
+  padding-bottom: 140px; }
   .section-all-day .container {
     max-width: 1170px; }
   .section-all-day .container-box {
@@ -2426,7 +2426,8 @@ a.see-full,
     padding-top: 16px; }
 
   .select-box {
-    padding-bottom: 50px; }
+    padding-bottom: 26px;
+    margin-bottom: 28px; }
 
   .see-mob {
     display: inline-block; }
@@ -2592,7 +2593,7 @@ a.see-full,
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
-    margin-top: 6px; }
+    margin-top: 4px; }
 
   .event-wrap {
     overflow: visible;
@@ -2639,7 +2640,19 @@ a.see-full,
   a.see-full, .see-full {
     max-width: 100px;
     float: right;
-    margin-left: 10px; } }
+    margin-left: 10px;
+    top: -3px; }
+
+  .select-box {
+    position: relative; }
+    .select-box:after {
+      position: absolute;
+      content: '';
+      width: 200%;
+      height: 1px;
+      left: -50%;
+      bottom: 0;
+      background-color: #005aff; } }
 @media all and (max-width: 560px) {
   .section-plan {
     background-size: cover; }

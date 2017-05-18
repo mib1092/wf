@@ -444,7 +444,8 @@
     padding-top: 16px;
   }
   .select-box {
-    padding-bottom: 50px;
+    padding-bottom: 26px;
+    margin-bottom: 28px;
   }
   .see-mob {
     display: inline-block;
@@ -660,7 +661,7 @@
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
-    margin-top: 6px;
+    margin-top: 4px;
   }
   .event-wrap {
     overflow: visible;
@@ -711,6 +712,19 @@
     max-width: 100px;
     float: right;
     margin-left: 10px;
+    top: -3px
+  }
+  .select-box {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 200%;
+      height: 1px;
+      left: -50%;
+      bottom: 0;
+      background-color: $bg-color-blue;
+    }
   }
 }
 
