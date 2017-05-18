@@ -1989,18 +1989,24 @@ a.see-full,
   .event-list > li:last-child {
     margin-bottom: 20px; }
 
-.event-date {
+.event-date-box {
   float: left;
-  display: inline-block;
+  display: table;
   width: 157px;
-  margin-right: 53px;
   padding: 14px 10px 15px;
+  margin-right: 53px;
+  text-align: center;
+  background-color: #005aff; }
+
+.event-date {
+  display: table-cell;
+  width: 100%;
+  min-height: 20px;
   letter-spacing: 0.8px;
   font: 900 30px "Montserrat";
   line-height: 1.25;
-  text-align: center;
   color: #ffffff;
-  background-color: #005aff; }
+  vertical-align: middle; }
   .event-date span {
     font-size: 16px;
     margin-left: 3px;
@@ -2076,6 +2082,51 @@ a.see-full,
     width: auto;
     padding-left: 40px;
     padding-right: 40px; }
+
+.select-title {
+  display: block;
+  margin-left: 3px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  font: 200 16px "Montserrat";
+  line-height: 1.25;
+  color: #005aff; }
+
+.time-period {
+  display: block;
+  margin-bottom: 26px;
+  font: 200 22px "Montserrat";
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #005aff; }
+
+.schedule .event-list {
+  margin-bottom: 66px; }
+  .schedule .event-list:last-of-type {
+    margin-bottom: 0; }
+.schedule .select-box {
+  padding-bottom: 85px; }
+  .schedule .select-box .select2-container {
+    max-width: 375px; }
+.schedule .event-date-box {
+  width: 154px;
+  padding-left: 23px;
+  margin-right: 24px;
+  min-height: 83px; }
+.schedule .event-date {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.35; }
+  .schedule .event-date span {
+    font-size: 15px; }
+    .schedule .event-date span.to {
+      font-size: 13px;
+      font-weight: 200;
+      letter-spacing: 0.6px; }
+.schedule .event-wrap {
+  padding-top: 0; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {
@@ -2365,11 +2416,17 @@ a.see-full,
   .title.subtitle {
     font-size: 17px; }
 
-  .event-date {
+  .event-date-box {
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
     margin-top: 6px; }
+    .schedule .event-date-box {
+      width: 90px;
+      min-height: 56px;
+      padding: 7px 5px 7px;
+      margin-right: 20px;
+      margin-top: 6px; }
 
   .event-wrap {
     padding-top: 0; }
@@ -2382,6 +2439,12 @@ a.see-full,
     font-size: 15px; }
     .event-date span {
       font-size: 8px; }
+    .schedule .event-date {
+      font-size: 15px; }
+      .schedule .event-date span {
+        font-size: 8px; }
+        .schedule .event-date span.to {
+          font-size: 8px; }
 
   .event-name {
     font-size: 18px; }
@@ -2428,6 +2491,8 @@ a.see-full,
   .select-box {
     padding-bottom: 26px;
     margin-bottom: 28px; }
+    .schedule .select-box {
+      padding-bottom: 26px; }
 
   .see-mob {
     display: inline-block; }
@@ -2459,7 +2524,17 @@ a.see-full,
       height: 1px;
       left: -20px;
       bottom: 0;
-      background-color: #005aff; } }
+      background-color: #005aff; }
+
+  .select-title {
+    font-size: 12px; }
+
+  .time-period {
+    font-size: 16px;
+    margin-bottom: 14px; }
+
+  .schedule .event-list {
+    margin-bottom: 46px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -2600,7 +2675,7 @@ a.see-full,
       max-width: 400px;
       padding-left: 0; } }
 @media all and (max-width: 600px) {
-  .event-date {
+  .event-date-box {
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
@@ -2652,7 +2727,10 @@ a.see-full,
     max-width: 100px;
     float: right;
     margin-left: 10px;
-    top: -3px; } }
+    top: -3px; }
+
+  .schedule .event-date-box {
+    margin-top: 4px; } }
 @media all and (max-width: 560px) {
   .section-plan {
     background-size: cover; }
@@ -2690,6 +2768,8 @@ a.see-full,
   .select-box {
     padding-left: 40px;
     padding-right: 15px; }
+    .schedule .select-box {
+      padding-right: 40px; }
 
   .see-more {
     padding: 0 40px 0; }
@@ -2699,12 +2779,21 @@ a.see-full,
 
   .select-box:after {
     width: 100%;
-    left: 0; } }
+    left: 0; }
+    .schedule .select-box:after {
+      width: 100%;
+      left: 0; }
+
+  .time-period {
+    padding-left: 40px;
+    padding-right: 40px; } }
 @media all and (max-width: 420px) {
   .accordion-box-content {
     padding-right: 25px; } }
 @media all and (max-width: 350px) {
   .select-box {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+    .schedule .select-box {
+      padding-right: 20px; } }
 
 /*# sourceMappingURL=screen.css.map */

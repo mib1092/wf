@@ -111,17 +111,23 @@
     }
   }
       .event-box {}
-        .event-date {
+        .event-date-box {
           float: left;
-          display: inline-block;
+          display: table;
           width: 157px;
-          margin-right: 53px;
           padding: 14px 10px 15px;
+          margin-right: 53px;
+          text-align: center;
+          background-color: $bg-color-blue;
+        }
+        .event-date {
+          display: table-cell;
+          width: 100%;
+          min-height: 20px;
           letter-spacing: 0.8px;
           @include font(900, 30px, $font-heading, $line-height-heading);
-          text-align: center;
           color: $white;
-          background-color: $bg-color-blue;
+          vertical-align: middle;
           span {
             font-size: 16px;
             margin-left: 3px;

@@ -1,0 +1,55 @@
+.select-title {
+  display: block;
+  margin-left: 3px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  @include font(200, 16px, $font-heading, $line-height-heading);
+  color: $color-heading;
+}
+.time-period {
+  display: block;
+  margin-bottom: 26px;
+  @include font(200, 22px, $font-heading, $line-height-heading);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: $color-heading;
+}
+
+.schedule {
+  .event-list {
+    margin-bottom: 66px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .select-box {
+    padding-bottom: 85px;
+    .select2-container {
+      max-width: 375px;
+    }
+  }
+  .event-date-box {
+    width: 154px;
+    padding-left: 23px;
+    margin-right: 24px;
+    min-height: 83px;
+  }
+  .event-date {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.35;
+    span {
+      font-size: 15px;
+      &.to {
+        font-size: 13px;
+        font-weight: 200;
+        letter-spacing: 0.6px;
+      }
+    }
+  }
+  .event-wrap {
+    padding-top: 0;
+  }
+}
+

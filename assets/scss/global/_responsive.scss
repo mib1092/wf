@@ -379,12 +379,20 @@
   .title.subtitle {
     font-size: 17px;
   }
-  .event-date {
+  .event-date-box {
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
     margin-top: 6px;
+    .schedule & {
+      width: 90px;
+      min-height: 56px;
+      padding: 7px 5px 7px;
+      margin-right: 20px;
+      margin-top: 6px;
+    }
   }
+
   .event-wrap {
     padding-top: 0;
     .fa-map-marker {
@@ -397,6 +405,15 @@
     font-size: 15px;
     span {
       font-size: 8px;
+    }
+    .schedule & {
+      font-size: 15px;
+      span {
+        font-size: 8px;
+        &.to {
+          font-size: 8px;
+        }
+      }
     }
   }
   .event-name {
@@ -446,6 +463,9 @@
   .select-box {
     padding-bottom: 26px;
     margin-bottom: 28px;
+    .schedule & {
+      padding-bottom: 26px;
+    }
   }
   .see-mob {
     display: inline-block;
@@ -480,6 +500,16 @@
       bottom: 0;
       background-color: $bg-color-blue;
     }
+  }
+  .select-title {
+    font-size: 12px;
+  }
+  .time-period {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .schedule .event-list {
+    margin-bottom: 46px;
   }
 }
 
@@ -669,7 +699,7 @@
 }
 
 @media all and (max-width: 600px) {
-  .event-date {
+  .event-date-box {
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
@@ -726,6 +756,9 @@
     margin-left: 10px;
     top: -3px
   }
+  .schedule .event-date-box {
+    margin-top: 4px;
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -771,6 +804,9 @@
   .select-box {
     padding-left: 40px;
     padding-right: 15px;
+    .schedule & {
+      padding-right: 40px;
+    }
   }
   .see-more {
     padding: 0 40px 0;
@@ -783,7 +819,17 @@
     &:after {
       width: 100%;
       left: 0;
+      .schedule & {
+        //width: calc( 100% + 80px);
+        //left: -40px;
+        width: 100%;
+        left: 0;
+      }
     }
+  }
+  .time-period {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -804,5 +850,12 @@
 @media all and (max-width: 350px) {
   .select-box {
     padding-left: 20px;
+    .schedule & {
+      padding-right: 20px;
+      //&:after {
+      //  width: 100%;
+      //  left: 0;
+      //}
+    }
   }
 }
