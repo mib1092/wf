@@ -1,0 +1,15 @@
+.see-more {
+  margin-top: 72px;
+  .title {
+    &.subtitle {
+      margin-bottom: 14px;
+      font-size: 36px;
+    }
+  }
+  a.btn, .btn {
+    max-width: none;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

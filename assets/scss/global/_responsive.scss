@@ -462,6 +462,12 @@
     padding-top: 5px;
     padding-bottom: 11px;
   }
+  .see-more {
+    margin-top: 50px;
+    .title.subtitle {
+      font-size: 18px;
+    }
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -687,6 +693,9 @@
     padding-left: 0;
     font-size: 15px;
     letter-spacing: 2px;
+    &:before {
+      content: none;
+    }
   }
   .event-content {
     padding-top: 12px;
@@ -736,7 +745,9 @@
     }
   }
   .event-location,
-  .event-name,
+  .event-name {
+    padding-right: 60px;
+  }
   .event-content {
     padding-right: 40px;
   }
@@ -746,6 +757,13 @@
   .select-box {
     padding-left: 40px;
     padding-right: 15px;
+  }
+  .see-more {
+    padding: 0 40px 0;
+    a.btn, .btn {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
