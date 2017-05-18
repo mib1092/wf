@@ -511,6 +511,30 @@
   .schedule .event-list {
     margin-bottom: 46px;
   }
+  .eat-item-title {
+    font-size: 17px;
+  }
+  .eat-list > li a {
+    font-size: 15px;
+    .fa-map-marker {
+      font-size: 24px;
+    }
+  }
+  .eat-box-content {
+    font-size: 14px;
+  }
+  .eat-title {
+    font-size: 15px;
+  }
+  .eat-bottom-box {
+    font-size: 12px;
+  }
+  .section-food-drink {
+    padding-top: 36px;
+  }
+  .eat-item .fa-map-marker {
+    font-size: 26px;
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -696,6 +720,15 @@
       padding-left: 0;
     }
   }
+  .eat-wrap {
+    margin: 0;
+  }
+    .eat-box {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 60px;
+      padding-right: 30px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -830,6 +863,11 @@
   .time-period {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .section-food-drink {
+    .container {
+      padding: 0;
+    }
   }
 }
 

@@ -2128,6 +2128,107 @@ a.see-full,
 .schedule .event-wrap {
   padding-top: 0; }
 
+.section-food-drink {
+  padding-top: 86px;
+  padding-bottom: 140px; }
+  .section-food-drink .container {
+    max-width: 1166px; }
+  .section-food-drink .container-box {
+    max-width: 1048px; }
+
+.eat-wrap {
+  margin: 0 -20px; }
+
+.eat-box {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 0 20px;
+  margin-bottom: 83px; }
+
+.eat-title {
+  display: inline-block;
+  padding: 8px 21px 6px;
+  margin-bottom: 19px;
+  font: 900 18px "Montserrat";
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #005aff;
+  border: 2px solid #005aff; }
+
+.eat-box-content {
+  max-width: 412px;
+  padding-left: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 0.15px; }
+
+.eat-list {
+  margin-left: 24px;
+  margin-top: 18px; }
+  .eat-list > li {
+    margin-bottom: 16px; }
+    .eat-list > li:last-child {
+      margin-bottom: 0; }
+    .eat-list > li a {
+      display: block;
+      font: 900 21px "Montserrat";
+      line-height: 1.25;
+      letter-spacing: 0.5px;
+      text-decoration: none; }
+      .eat-list > li a .fa-map-marker {
+        position: relative;
+        top: 3px;
+        padding-right: 16px;
+        font-size: 32px;
+        color: #005aff; }
+      .eat-list > li a:hover {
+        text-decoration: underline; }
+
+.eat-list-details {
+  margin-top: 5px;
+  margin-left: 24px; }
+  .eat-list-details > li {
+    margin-bottom: 23px; }
+    .eat-list-details > li:last-child {
+      margin-bottom: 0; }
+
+.eat-item .fa-map-marker {
+  position: relative;
+  top: -2px;
+  padding-left: 11px;
+  font-size: 30px;
+  color: #d0d0d0;
+  -webkit-transition: 0.25s;
+  -khtml-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s; }
+.eat-item > a:hover .fa-map-marker {
+  color: #005aff; }
+
+.eat-item-title {
+  display: inline;
+  font: 900 28px "Montserrat";
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  color: #005aff; }
+
+.eat-bottom-box {
+  display: block;
+  margin-top: 2px;
+  font-size: 15px; }
+
+.eat-item-time {
+  letter-spacing: 0.5px; }
+
+a.eat-more-info {
+  color: #5d5d5d;
+  margin-left: 15px;
+  letter-spacing: 0.5px; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {
   .nav ul > li a {
@@ -2534,7 +2635,30 @@ a.see-full,
     margin-bottom: 14px; }
 
   .schedule .event-list {
-    margin-bottom: 46px; } }
+    margin-bottom: 46px; }
+
+  .eat-item-title {
+    font-size: 17px; }
+
+  .eat-list > li a {
+    font-size: 15px; }
+    .eat-list > li a .fa-map-marker {
+      font-size: 24px; }
+
+  .eat-box-content {
+    font-size: 14px; }
+
+  .eat-title {
+    font-size: 15px; }
+
+  .eat-bottom-box {
+    font-size: 12px; }
+
+  .section-food-drink {
+    padding-top: 36px; }
+
+  .eat-item .fa-map-marker {
+    font-size: 26px; } }
 @media all and (max-width: 860px) {
   .container.hero-bottom-wrap {
     overflow: hidden; }
@@ -2673,7 +2797,16 @@ a.see-full,
       float: none;
       margin-bottom: 51px;
       max-width: 400px;
-      padding-left: 0; } }
+      padding-left: 0; }
+
+  .eat-wrap {
+    margin: 0; }
+
+  .eat-box {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 60px;
+    padding-right: 30px; } }
 @media all and (max-width: 600px) {
   .event-date-box {
     width: 78px;
@@ -2786,7 +2919,10 @@ a.see-full,
 
   .time-period {
     padding-left: 40px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+
+  .section-food-drink .container {
+    padding: 0; } }
 @media all and (max-width: 420px) {
   .accordion-box-content {
     padding-right: 25px; } }

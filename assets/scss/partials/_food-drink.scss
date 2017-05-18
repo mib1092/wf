@@ -1,0 +1,110 @@
+.section-food-drink {
+  padding-top: 86px;
+  padding-bottom: 140px;
+  .container {
+    max-width: 1166px;
+  }
+  .container-box{
+    max-width: 1048px;
+  }
+}
+  .eat-wrap {
+    margin: 0 -20px;
+  }
+    .eat-box {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+      padding: 0 20px;
+      margin-bottom: 83px;
+    }
+      .eat-title {
+        display: inline-block;
+        padding: 8px 21px 6px;
+        margin-bottom: 19px;
+        @include font(900, 18px, $font-heading, $line-height-heading);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $color-heading;
+        border: 2px solid $bg-color-blue;
+      }
+      .eat-box-content {
+        max-width: 412px;
+        padding-left: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        word-spacing: 0.15px;
+      }
+      .eat-list {
+        margin-left: 24px;
+        margin-top: 18px;
+        > li {
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            display: block;
+            @include font(900, 21px, $font-heading, $line-height-heading);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            .fa-map-marker {
+              position: relative;
+              top: 3px;
+              padding-right: 16px;
+              font-size: 32px;
+              color: $color-heading;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .eat-list-details {
+        margin-top: 5px;
+        margin-left: 24px;
+        > li {
+          margin-bottom: 23px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+          .eat-item {
+            .fa-map-marker {
+              position: relative;
+              top: -2px;
+              padding-left: 11px;
+              font-size: 30px;
+              color: #d0d0d0;
+              @include transition($duration-link);
+            }
+            > a {
+              &:hover {
+                .fa-map-marker {
+                  color: $color-heading;
+                }
+              }
+            }
+          }
+            .eat-item-title {
+              display: inline;
+              @include font(900, 28px, $font-heading, $line-height-heading);
+              letter-spacing: 0.8px;
+              color: $color-heading;
+            }
+            .eat-bottom-box {
+              display: block;
+              margin-top: 2px;
+              font-size: 15px;
+            }
+            .eat-item-time {
+              letter-spacing: 0.5px;
+            }
+            a.eat-more-info {
+              color: $color-text;
+              margin-left: 15px;
+              letter-spacing: 0.5px;
+            }
