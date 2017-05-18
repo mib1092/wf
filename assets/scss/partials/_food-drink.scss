@@ -54,9 +54,11 @@
               padding-right: 16px;
               font-size: 32px;
               color: $color-heading;
+              @include transition($duration-link);
             }
-            &:hover {
-              text-decoration: underline;
+            &:hover,
+            &:hover .fa-map-marker {
+              color: #d0d0d0;
             }
           }
         }
@@ -75,7 +77,7 @@
           .eat-item {
             .fa-map-marker {
               position: relative;
-              top: -2px;
+              top: -1px;
               padding-left: 11px;
               font-size: 30px;
               color: #d0d0d0;

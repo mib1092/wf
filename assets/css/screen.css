@@ -2182,9 +2182,15 @@ a.see-full,
         top: 3px;
         padding-right: 16px;
         font-size: 32px;
-        color: #005aff; }
-      .eat-list > li a:hover {
-        text-decoration: underline; }
+        color: #005aff;
+        -webkit-transition: 0.25s;
+        -khtml-transition: 0.25s;
+        -moz-transition: 0.25s;
+        -ms-transition: 0.25s;
+        -o-transition: 0.25s;
+        transition: 0.25s; }
+      .eat-list > li a:hover, .eat-list > li a:hover .fa-map-marker {
+        color: #d0d0d0; }
 
 .eat-list-details {
   margin-top: 5px;
@@ -2196,7 +2202,7 @@ a.see-full,
 
 .eat-item .fa-map-marker {
   position: relative;
-  top: -2px;
+  top: -1px;
   padding-left: 11px;
   font-size: 30px;
   color: #d0d0d0;
