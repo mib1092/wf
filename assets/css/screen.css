@@ -2455,9 +2455,9 @@ a.see-full,
     .select-box:after {
       position: absolute;
       content: '';
-      width: 200%;
+      width: calc( 100% + 40px);
       height: 1px;
-      left: -50%;
+      left: -20px;
       bottom: 0;
       background-color: #005aff; } }
 @media all and (max-width: 860px) {
@@ -2695,7 +2695,11 @@ a.see-full,
     padding: 0 40px 0; }
     .see-more a.btn, .see-more .btn {
       padding-left: 10px;
-      padding-right: 10px; } }
+      padding-right: 10px; }
+
+  .select-box:after {
+    width: 100%;
+    left: 0; } }
 @media all and (max-width: 420px) {
   .accordion-box-content {
     padding-right: 25px; } }
