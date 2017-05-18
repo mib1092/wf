@@ -1,7 +1,16 @@
 .page-title-box {
   margin-top: 56px;
 }
-  .page-desc {}
+  .page-desc {
+    display: block;
+    margin-bottom: -4px;
+    padding-top: 24px;
+    padding-left: 7px;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+    @include font(200, 16px, $font-heading, $line-height-heading);
+    color: $white;
+  }
   .title-page {
     margin-left: 2px;
     @include font(900, $font-size-h1, $font-heading, $line-height-heading);

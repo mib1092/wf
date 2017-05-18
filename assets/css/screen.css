@@ -253,16 +253,46 @@ img {
   padding: 0 20px; }
 
 .content * {
-  margin-bottom: 12px;
-  line-height: 1.4; }
+  margin-bottom: 29px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 0.3px; }
   .content *:last-child {
     margin-bottom: 0; }
-.content ul > li {
-  list-style-type: disc; }
-.content ol > li {
-  list-style-type: decimal; }
+.content h2 {
+  margin-bottom: 0;
+  font: 900 28px "Montserrat";
+  line-height: 1.25;
+  color: #005aff;
+  letter-spacing: 0.9px;
+  word-spacing: -1px; }
+.content ul {
+  margin-top: 11px;
+  margin-bottom: 33px; }
+  .content ul > li {
+    position: relative;
+    padding-left: 30px; }
+    .content ul > li:before {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      left: 10px;
+      top: 8px;
+      -webkit-border-radius: 50%;
+      -khtml-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #005aff; }
+.content ol {
+  margin-top: 11px;
+  margin-bottom: 33px; }
+  .content ol > li {
+    list-style-type: decimal; }
 .content li {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   text-align: left; }
 .content blockquote {
   max-width: 640px;
@@ -270,6 +300,8 @@ img {
   margin-right: auto;
   text-align: left; }
 .content img {
+  margin-top: 12px;
+  margin-bottom: 27px;
   max-width: 100%;
   height: auto; }
   .content img.alignleft {
@@ -282,6 +314,10 @@ img {
     display: block;
     margin: 0 auto 12px;
     clear: both; }
+.content strong, .content b {
+  padding-right: 6px;
+  letter-spacing: 0.9px;
+  word-spacing: 0.5px; }
 
 a.btn, .btn {
   position: relative;
@@ -1345,7 +1381,8 @@ img.mfp-img {
       margin-bottom: 50px; }
   .title.subtitle {
     font-size: 28px;
-    letter-spacing: -0.5px; }
+    letter-spacing: 0.9px;
+    word-spacing: -1px; }
   .title.home-title {
     margin-bottom: 24px;
     font-size: 38px;
@@ -1653,6 +1690,17 @@ a.fb-invite-link {
 .page-title-box {
   margin-top: 56px; }
 
+.page-desc {
+  display: block;
+  margin-bottom: -4px;
+  padding-top: 24px;
+  padding-left: 7px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  font: 200 16px "Montserrat";
+  line-height: 1.25;
+  color: #ffffff; }
+
 .title-page {
   margin-left: 2px;
   font: 900 68px "Montserrat";
@@ -1757,6 +1805,35 @@ a.fb-invite-link {
 .section-fireworks .container,
 .section-blockquote .container {
   max-width: 1164px; }
+.section-fireworks .container-box,
+.section-blockquote .container-box {
+  max-width: 796px; }
+
+.section-fireworks {
+  padding-top: 71px;
+  padding-bottom: 70px; }
+
+.section-blockquote {
+  padding-top: 82px;
+  padding-bottom: 70px; }
+
+.blockquote-list {
+  text-align: center; }
+  .blockquote-list > li {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 40px;
+    vertical-align: top; }
+
+.blockquote-box {
+  margin: 0 auto;
+  max-width: 340px; }
+
+.blockquote-content {
+  font-style: italic; }
+
+.blockquote-author {
+  font-size: 12px; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1400px) {

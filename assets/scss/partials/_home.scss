@@ -375,8 +375,10 @@
       }
     }
     &.subtitle {
+      //margin-bottom: 11px;
       font-size: $font-size-h2;
-      letter-spacing: -0.5px;
+      letter-spacing: 0.9px;
+      word-spacing: -1px;
     }
     &.home-title {
       margin-bottom: 24px;

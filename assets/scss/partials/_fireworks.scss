@@ -3,4 +3,36 @@
   .container {
     max-width: 1164px;
   }
+  .container-box {
+    max-width: 796px;
+  }
 }
+
+.section-fireworks {
+  padding-top: 71px;
+  padding-bottom: 70px;
+}
+
+.section-blockquote {
+  padding-top: 82px;
+  padding-bottom: 70px;
+}
+  .blockquote-list {
+    text-align: center;
+    > li {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 40px;
+      vertical-align: top;
+    }
+  }
+    .blockquote-box {
+      margin: 0 auto;
+      max-width: 340px;
+    }
+      .blockquote-content {
+        font-style: italic;
+      }
+      .blockquote-author {
+        font-size: 12px;
+      }

@@ -61,24 +61,48 @@ img {
 
 .content {
   * {
-    margin-bottom: 12px;
-    line-height: $line-height;
+    margin-bottom: 29px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 0.3px;
     &:last-child {
       margin-bottom: 0;
     }
   }
+  h2 {
+    margin-bottom: 0;
+    @include font(900, $font-size-h2, $font-heading, $line-height-heading);
+    color: $color-heading;
+    letter-spacing: 0.9px;
+    word-spacing: -1px;
+  }
   ul {
-    & > li {
-      list-style-type: disc;
+    margin-top: 11px;
+    margin-bottom: 33px;
+    > li {
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 6px;
+        left: 10px;
+        top: 8px;
+        @include border-radius(50%);
+        background-color: $color-heading;
+      }
     }
   }
   ol {
-    & > li {
+    margin-top: 11px;
+    margin-bottom: 33px;
+    > li {
       list-style-type: decimal;
     }
   }
   li {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     text-align: left;
   }
   blockquote {
@@ -88,6 +112,8 @@ img {
     text-align: left;
   }
   img {
+    margin-top: 12px;
+    margin-bottom: 27px;
     max-width: 100%;
     height: auto;
     &.alignleft {
@@ -103,6 +129,11 @@ img {
       margin: 0 auto 12px;
       clear: both;
     }
+  }
+  strong, b {
+    padding-right: 6px;
+    letter-spacing: 0.9px;
+    word-spacing: 0.5px;
   }
 }
 
