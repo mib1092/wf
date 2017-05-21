@@ -29,7 +29,7 @@ $(document).ready(function() {
     //     $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);
     // });
 
-    // for select
+    //for select
     // if ( $('.select-box').length ) {
     //     $('.select-box select').select2();
     // }

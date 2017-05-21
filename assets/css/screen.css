@@ -585,7 +585,7 @@ a.btn-play,
 
 .top-navbar {
   position: relative;
-  z-index: 9999; }
+  z-index: 1000; }
   .top-navbar .container {
     max-width: 1170px; }
   .top-navbar:hover .top-nav {
@@ -1066,6 +1066,9 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px; } }
 /* styles used throughout site */
+.first-link {
+  display: none; }
+
 .weather-alert {
   display: none;
   padding-top: 16px;
@@ -1088,7 +1091,7 @@ img.mfp-img {
   position: relative;
   padding-bottom: 49px;
   background-position: top center;
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-color: #000; }
   .hero:after {
@@ -1100,10 +1103,8 @@ img.mfp-img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../../img/transition_white_v2.png);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url(../../img/transition_white.png);
+    background-repeat: repeat-x; }
 
 .container.hero-top {
   max-width: 1168px;
@@ -1916,22 +1917,52 @@ a.see-full,
 .select-box {
   padding-top: 10px;
   padding-bottom: 91px; }
-  .select-box select {
+  .select-box .select-wrap {
     position: relative;
+    display: inline-block;
     max-width: 257px;
+    width: 100%; }
+    .select-box .select-wrap:after {
+      content: '\f107';
+      position: absolute;
+      z-index: 100;
+      width: 30px;
+      height: 29px;
+      right: 1px;
+      top: 1px;
+      font: 34px FontAwesome;
+      color: #0097de;
+      text-align: center;
+      line-height: 30px;
+      background: #ffffff;
+      pointer-events: none; }
+  .select-box select {
+    min-height: 32px;
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
     font: 900 26px "Montserrat";
     line-height: 1.25;
     border: none;
+    border-bottom: 2px solid #005aff;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
     letter-spacing: 0.8px;
     color: #005aff;
     text-transform: uppercase; }
     .select-box select:focus, .select-box select:hover {
-      border: none; }
+      border-bottom: 2px solid #005aff; }
 
 .select2-container {
   max-width: 257px;
-  width: 100% !important; }
+  width: 100% !important;
+  z-index: 110; }
 
 .select2-container--default .select2-selection--single {
   height: auto;
@@ -2164,6 +2195,8 @@ a.see-full,
   padding-bottom: 85px; }
   .schedule .select-box .select2-container {
     max-width: 375px; }
+  .schedule .select-box .select-wrap {
+    max-width: 375px; }
 .schedule .event-date-box {
   width: 154px;
   padding-left: 23px;
@@ -2374,7 +2407,9 @@ a.eat-more-info {
     padding-right: 40px; } }
 @media all and (max-width: 1280px) {
   .half-box {
-    max-width: 400px; }
+    max-width: 600px; }
+    .half-box.right {
+      max-width: 500px; }
 
   .icons-list img {
     max-width: 100%; }
@@ -2398,6 +2433,9 @@ a.eat-more-info {
       padding-left: 40px;
       padding-right: 40px; } }
 @media all and (max-width: 1199px) {
+  .half-box {
+    max-width: 500px; }
+
   .section-plan .plan-bg {
     top: 70px;
     background-image: url(../../img/desktop2.png); }
@@ -2420,6 +2458,11 @@ a.eat-more-info {
   .hero-title {
     padding-top: 60px;
     padding-left: 160px; } }
+@media all and (max-width: 1024px) {
+  .half-box {
+    max-width: 400px; }
+    .half-box.right {
+      max-width: 400px; } }
 @media all and (max-width: 991px) {
   .section-plan .plan-bg {
     display: none; }
@@ -2714,6 +2757,13 @@ a.eat-more-info {
     font-size: 12px;
     font-weight: 200; }
 
+  .select-box .select-wrap {
+    max-width: 158px; }
+    .select-box .select-wrap:after {
+      font-size: 24px; }
+  .select-box select {
+    font-size: 14px; }
+
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     font-size: 14px; }
 
@@ -2879,10 +2929,8 @@ a.eat-more-info {
         left: 0;
         right: 0;
         bottom: -1px;
-        background-image: url(../../img/transition_white_v2.png);
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat; }
+        background-image: url(../../img/transition_white.png);
+        background-repeat: repeat-x; }
 
   .hero {
     background-color: #ffffff; }

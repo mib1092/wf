@@ -29,30 +29,51 @@
   .select-box {
     padding-top: 10px;
     padding-bottom: 91px;
-    select {
-      position: relative;
+    .select-wrap {
+      position:relative;
+      display: inline-block;
       max-width: 257px;
       width: 100%;
+      &:after {
+        content: '\f107';
+        position: absolute;
+        z-index: 100;
+        width: 30px;
+        height: 29px;
+        right: 1px;
+        top: 1px;
+        font: 34px FontAwesome;
+        color: #0097de;
+        text-align: center;
+        line-height: 30px;
+        background: #ffffff;
+        pointer-events: none;
+      }
+    }
+    select {
+      min-height: 32px;
+      width: 100%;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+      cursor:pointer;
       @include font(900, 26px, $font-heading, $line-height-heading);
       border: none;
+      border-bottom: 2px solid $bg-color-blue;
+      @include border-radius(0);
       letter-spacing: 0.8px;
       color: $color-heading;
       text-transform: uppercase;
       &:focus,
       &:hover {
-        border: none;
-      }
-      option {
-        //text-transform: uppercase;
-        //@include font(900, 20px, $font-heading, $line-height-heading);
-        //letter-spacing: 1px;
-        //color: #5d5d5d;
+        border-bottom: 2px solid $bg-color-blue;
       }
     }
   }
     .select2-container {
       max-width: 257px;
       width: 100% !important;
+      z-index: 110;
     }
     .select2-container--default .select2-selection--single {
       height: auto;

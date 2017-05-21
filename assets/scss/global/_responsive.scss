@@ -21,7 +21,10 @@
 @media all and (max-width: 1280px) {
   ///!!!!!!
   .half-box {
-    max-width: 400px;
+    max-width: 600px;
+    &.right {
+      max-width: 500px;
+    }
   }
   .icons-list {
     img {
@@ -56,6 +59,9 @@
 }
 
 @media all and (max-width: 1199px) {
+  .half-box {
+    max-width: 500px;
+  }
   .section-plan {
     .plan-bg {
       top: 70px;
@@ -94,11 +100,15 @@
     padding-top: 60px;
     padding-left: 160px;
   }
-
 }
 
 @media all and (max-width: 1024px) {
-
+  .half-box {
+    max-width: 400px;
+    &.right {
+      max-width: 400px;
+    }
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -449,6 +459,17 @@
     font-size: 12px;
     font-weight: 200;
   }
+  .select-box {
+    .select-wrap {
+      max-width: 158px;
+      &:after {
+        font-size: 24px;
+      }
+    }
+    select {
+      font-size: 14px;
+    }
+  }
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     font-size: 14px;
   }
@@ -644,10 +665,8 @@
         left: 0;
         right: 0;
         bottom: -1px;
-        background-image: url(../../img/transition_white_v2.png);
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url(../../img/transition_white.png);
+        background-repeat: repeat-x;
       }
     }
   }
