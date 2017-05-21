@@ -20,21 +20,16 @@
     display: block;
     padding-left: 0;
     ul {
-      width: 100%;
+      width: auto;
       margin: 0 -30px;
+      padding-bottom: 3px;
+      text-align: center;
       > li {
         overflow: hidden;
-        &.active {
-          a {
-            &:after {
-              bottom: -3px;
-            }
-          }
-        }
         a {
           position: relative;
           width: 100%;
-          padding: 10px 30px 4px;
+          padding: 10px 30px 1px;
           margin-bottom: 6px;
           @include font(800, $font-size, $font-heading, $line-height-heading);
           letter-spacing: 2.1px;
@@ -49,10 +44,11 @@
             background-color: $white;
             @include transition($duration);
           }
-          &:hover {
-            &:after {
-              bottom: -3px;
-            }
+        }
+        &.active a,
+        a:hover {
+          &:after {
+            bottom: -6px;
           }
         }
       }

@@ -98,7 +98,6 @@
 }
 
 @media all and (max-width: 1024px) {
-//!!!!
 
 }
 
@@ -136,6 +135,9 @@
   }
   .top-nav {
     display: none;
+    .inner-nav & {
+      padding-bottom: 20px;
+    }
   }
   .hero {
     background-size: cover;
@@ -344,7 +346,7 @@
     }
   }
   .inner-nav {
-    padding-bottom: 28px;
+    padding-bottom: 40px;
   }
   .title-page {
     font-size: 34px;

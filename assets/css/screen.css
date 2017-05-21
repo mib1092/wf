@@ -605,16 +605,16 @@ a.btn-play,
     display: block;
     padding-left: 0; }
     .inner-nav .top-nav ul {
-      width: 100%;
-      margin: 0 -30px; }
+      width: auto;
+      margin: 0 -30px;
+      padding-bottom: 3px;
+      text-align: center; }
       .inner-nav .top-nav ul > li {
         overflow: hidden; }
-        .inner-nav .top-nav ul > li.active a:after {
-          bottom: -3px; }
         .inner-nav .top-nav ul > li a {
           position: relative;
           width: 100%;
-          padding: 10px 30px 4px;
+          padding: 10px 30px 1px;
           margin-bottom: 6px;
           font: 800 18px "Montserrat";
           line-height: 1.25;
@@ -634,8 +634,9 @@ a.btn-play,
             -ms-transition: 0.35s;
             -o-transition: 0.35s;
             transition: 0.35s; }
-          .inner-nav .top-nav ul > li a:hover:after {
-            bottom: -3px; }
+        .inner-nav .top-nav ul > li.active a:after,
+        .inner-nav .top-nav ul > li a:hover:after {
+          bottom: -6px; }
   .top-nav > ul > li {
     display: inline-block; }
     .top-nav > ul > li a {
@@ -2459,6 +2460,8 @@ a.eat-more-info {
 
   .top-nav {
     display: none; }
+    .inner-nav .top-nav {
+      padding-bottom: 20px; }
 
   .hero {
     background-size: cover; }
@@ -2632,7 +2635,7 @@ a.eat-more-info {
       margin-bottom: 12px; }
 
   .inner-nav {
-    padding-bottom: 28px; }
+    padding-bottom: 40px; }
 
   .title-page {
     font-size: 34px;
