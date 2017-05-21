@@ -7,18 +7,6 @@ $(document).ready(function() {
         $(document.body).toggleClass('overflow');
     });
 
-    // for modal
-    if ( $('a.popup-video').length ) {
-        $('.popup-video').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
-    }
-
     // for empty links
     $('.prevent').on('click', function(event){
         event.preventDefault();
@@ -30,8 +18,20 @@ $(document).ready(function() {
     // });
 
     //for select
-    // if ( $('.select-box').length ) {
-    //     $('.select-box select').select2();
-    // }
+    if ( $('.select-box').length ) {
+        $('.select-box select').select2();
+    }
+
+    // for modal
+    if ( $('a.popup-video').length ) {
+        $('.popup-video').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    }
 
 });

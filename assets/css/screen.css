@@ -1089,7 +1089,8 @@ img.mfp-img {
 
 .hero {
   position: relative;
-  padding-bottom: 49px;
+  overflow: hidden;
+  padding-bottom: 37px;
   background-position: top center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -1098,13 +1099,13 @@ img.mfp-img {
     position: absolute;
     z-index: 30;
     content: '';
-    width: 100%;
     height: 91px;
-    left: 0;
-    right: 0;
+    left: -1px;
+    right: -1px;
     bottom: 0;
     background-image: url(../../img/transition_white.png);
-    background-repeat: repeat-x; }
+    background-repeat: repeat-x;
+    background-position-x: center; }
 
 .container.hero-top {
   max-width: 1168px;
@@ -1292,7 +1293,8 @@ img.mfp-img {
     opacity: 1; }
   .video-box img {
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    margin-bottom: -7px; }
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -2459,10 +2461,9 @@ a.eat-more-info {
     padding-top: 60px;
     padding-left: 160px; } }
 @media all and (max-width: 1024px) {
-  .half-box {
-    max-width: 400px; }
-    .half-box.right {
-      max-width: 400px; } }
+  .half-box,
+  .half-box.right {
+    max-width: 450px; } }
 @media all and (max-width: 991px) {
   .section-plan .plan-bg {
     display: none; }
@@ -2501,7 +2502,8 @@ a.eat-more-info {
       padding-bottom: 20px; }
 
   .hero {
-    background-size: cover; }
+    background-size: cover;
+    padding-bottom: 50px; }
 
   .facebook-list > li {
     width: 25%;
@@ -2924,13 +2926,13 @@ a.eat-more-info {
         position: absolute;
         z-index: 30;
         content: '';
-        width: 100%;
-        height: 91px;
-        left: 0;
-        right: 0;
+        height: 80px;
+        left: -1px;
+        right: -1px;
         bottom: -1px;
         background-image: url(../../img/transition_white.png);
-        background-repeat: repeat-x; }
+        background-repeat: repeat-x;
+        background-position-x: center; }
 
   .hero {
     background-color: #ffffff; }
@@ -2938,6 +2940,9 @@ a.eat-more-info {
       background-color: #FFFFFF;
       background-image: none;
       height: 50px; }
+
+  .hero-top {
+    background: url(../../img/hero_banner.png) no-repeat center top transparent; }
 
   .container.hero-bottom-wrap {
     background-color: #ffffff; }

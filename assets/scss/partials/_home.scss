@@ -24,20 +24,21 @@
 
 .hero {
   position: relative;
-  padding-bottom: 49px;
+  overflow: hidden;
+  padding-bottom: 37px;
   @include bg(top center, auto 100%, no-repeat);
   background-color: #000;
   &:after {
     position: absolute;
     z-index: 30;
     content: '';
-    width: 100%;
     height: 91px;
-    left: 0;
-    right: 0;
+    left: -1px;
+    right: -1px;
     bottom: 0;
     background-image: url(../../img/transition_white.png);
     background-repeat: repeat-x;
+    background-position-x: center;
   }
 }
 .container {
@@ -245,6 +246,7 @@
     img {
       max-width: 100%;
       height: auto;
+      margin-bottom: -7px;
     }
   }
 
