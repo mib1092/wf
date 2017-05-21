@@ -49,8 +49,6 @@
           @include transition($duration);
           cursor: pointer;
           > a {
-            position: relative;
-            padding: 23px 35px 17px 0;
             color: $color-heading;
             @include font(900, 28px, $font-heading, $line-height-heading);
             letter-spacing: 0.75px;
@@ -87,6 +85,8 @@
     }
         .accordion-box-content {
           display: none;
+          position: relative;
+          z-index: 2;
           color: $color-text;
           margin-top: -12px;
           padding: 0 80px 15px 2px;

@@ -1766,8 +1766,6 @@ a.fb-invite-link {
     transition: 0.35s;
     cursor: pointer; }
     .accordion-list > li h2 > a {
-      position: relative;
-      padding: 23px 35px 17px 0;
       color: #005aff;
       font: 900 28px "Montserrat";
       line-height: 1.25;
@@ -1821,6 +1819,8 @@ a.fb-invite-link {
 
 .accordion-box-content {
   display: none;
+  position: relative;
+  z-index: 2;
   color: #5d5d5d;
   margin-top: -12px;
   padding: 0 80px 15px 2px;
