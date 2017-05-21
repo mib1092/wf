@@ -1397,11 +1397,17 @@ img.mfp-img {
   padding-bottom: 50px;
   background-color: #ffffff; }
   .section-plan .container {
-    max-width: 1600px;
-    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1600px; }
+  .section-plan .plan-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 45px;
     background-image: url(../../img/desktop.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: contain; }
 
 .title {
@@ -2370,7 +2376,8 @@ a.eat-more-info {
       padding-left: 40px;
       padding-right: 40px; } }
 @media all and (max-width: 1199px) {
-  .section-plan .container {
+  .section-plan .plan-bg {
+    top: 70px;
     background-image: url(../../img/desktop2.png); }
 
   .plan-list > li {

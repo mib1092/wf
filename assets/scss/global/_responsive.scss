@@ -57,7 +57,8 @@
 
 @media all and (max-width: 1199px) {
   .section-plan {
-    .container {
+    .plan-bg {
+      top: 70px;
       background-image: url(../../img/desktop2.png);
     }
   }
@@ -102,6 +103,9 @@
 }
 
 @media all and (max-width: 991px) {
+  .section-plan .plan-bg {
+    display: none;
+  }
   .wrapper {
     padding-top: 66px;
   }
