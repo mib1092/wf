@@ -1397,7 +1397,12 @@ img.mfp-img {
   padding-bottom: 50px;
   background-color: #ffffff; }
   .section-plan .container {
-    max-width: 1600px; }
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain; }
 
 .title {
   font: 900 68px "Montserrat";
@@ -1453,29 +1458,6 @@ img.mfp-img {
         font-size: 14.47px;
         padding-top: 12px;
         padding-bottom: 12px; }
-    .plan-list > li:nth-child(4n+1) .plan-box:before {
-      z-index: 40;
-      width: 517px;
-      height: 371px;
-      background-image: url(../../img/watercolor-001.png); }
-    .plan-list > li:nth-child(4n+2) .plan-box:before {
-      z-index: 30;
-      width: 467px;
-      height: 349px;
-      background-image: url(../../img/watercolor-002.png);
-      opacity: 0.8; }
-    .plan-list > li:nth-child(4n+3) .plan-box:before {
-      z-index: 20;
-      width: 551px;
-      height: 356px;
-      background-image: url(../../img/watercolor-003.png);
-      opacity: 0.8; }
-    .plan-list > li:nth-child(4n+4) .plan-box:before {
-      z-index: 10;
-      width: 487px;
-      height: 377px;
-      background-image: url(../../img/watercolor-004.png);
-      opacity: 0.8; }
 
 .plan-list-mob {
   display: none;
@@ -1760,6 +1742,8 @@ a.fb-invite-link {
   .accordion-list > li:last-child {
     margin-bottom: 0;
     border-bottom: none; }
+  .accordion-list > li > a {
+    text-decoration: none; }
   .accordion-list > li h2 {
     position: relative;
     padding: 23px 35px 17px 0;
@@ -1780,7 +1764,7 @@ a.fb-invite-link {
       font-family: 'FontAwesome';
       font-size: 42px;
       color: #005aff;
-      right: -1px;
+      right: 0;
       top: 50%;
       -webkit-transition: 0.35s;
       -khtml-transition: 0.35s;
@@ -1904,6 +1888,18 @@ a.see-full,
 .select-box {
   padding-top: 10px;
   padding-bottom: 91px; }
+  .select-box select {
+    position: relative;
+    max-width: 257px;
+    width: 100%;
+    font: 900 26px "Montserrat";
+    line-height: 1.25;
+    border: none;
+    letter-spacing: 0.8px;
+    color: #005aff;
+    text-transform: uppercase; }
+    .select-box select:focus, .select-box select:hover {
+      border: none; }
 
 .select2-container {
   max-width: 257px;
@@ -2374,6 +2370,9 @@ a.eat-more-info {
       padding-left: 40px;
       padding-right: 40px; } }
 @media all and (max-width: 1199px) {
+  .section-plan .container {
+    background-image: url(../../img/desktop2.png); }
+
   .plan-list > li {
     width: 34%; }
 
@@ -2573,7 +2572,7 @@ a.eat-more-info {
   .section-plan {
     margin-top: 50px;
     padding-bottom: 100px;
-    background-image: url(../../img/watercolor_mobile_bg.png);
+    background-image: url(../../img/mobile.png);
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat; }

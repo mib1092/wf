@@ -360,6 +360,12 @@
     background-color: $white;
     .container {
       max-width: 1600px;
+      background-repeat: no-repeat;
+      background-image: url(../../img/desktop.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+
     }
   }
   .title {
@@ -417,41 +423,41 @@
           padding-bottom: 12px;
         }
       }
-      &:nth-child(4n+1) .plan-box {
-        &:before {
-          z-index: 40;
-          width: 517px;
-          height: 371px;
-          background-image: url(../../img/watercolor-001.png);
-        }
-      }
-      &:nth-child(4n+2) .plan-box {
-        &:before {
-          z-index: 30;
-          width: 467px;
-          height: 349px;
-          background-image: url(../../img/watercolor-002.png);
-          opacity: 0.8;
-        }
-      }
-      &:nth-child(4n+3) .plan-box {
-        &:before {
-          z-index: 20;
-          width: 551px;
-          height: 356px;
-          background-image: url(../../img/watercolor-003.png);
-          opacity: 0.8;
-        }
-      }
-      &:nth-child(4n+4) .plan-box {
-        &:before {
-          z-index: 10;
-          width: 487px;
-          height: 377px;
-          background-image: url(../../img/watercolor-004.png);
-          opacity: 0.8;
-        }
-      }
+      //&:nth-child(4n+1) .plan-box {
+      //  &:before {
+      //    z-index: 40;
+      //    width: 517px;
+      //    height: 371px;
+      //    background-image: url(../../img/watercolor-001.png);
+      //  }
+      //}
+      //&:nth-child(4n+2) .plan-box {
+      //  &:before {
+      //    z-index: 30;
+      //    width: 467px;
+      //    height: 349px;
+      //    background-image: url(../../img/watercolor-002.png);
+      //    opacity: 0.8;
+      //  }
+      //}
+      //&:nth-child(4n+3) .plan-box {
+      //  &:before {
+      //    z-index: 20;
+      //    width: 551px;
+      //    height: 356px;
+      //    background-image: url(../../img/watercolor-003.png);
+      //    opacity: 0.8;
+      //  }
+      //}
+      //&:nth-child(4n+4) .plan-box {
+      //  &:before {
+      //    z-index: 10;
+      //    width: 487px;
+      //    height: 377px;
+      //    background-image: url(../../img/watercolor-004.png);
+      //    opacity: 0.8;
+      //  }
+      //}
     }
   }
   .plan-list-mob {

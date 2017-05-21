@@ -56,6 +56,11 @@
 }
 
 @media all and (max-width: 1199px) {
+  .section-plan {
+    .container {
+      background-image: url(../../img/desktop2.png);
+    }
+  }
   .plan-list {
     > li {
       width: 34%;
@@ -306,7 +311,7 @@
   .section-plan {
     margin-top: 50px;
     padding-bottom: 100px;
-    background-image: url(../../img/watercolor_mobile_bg.png);
+    background-image: url(../../img/mobile.png);
     @include bg(top center, contain, no-repeat);
   }
   .plan-list {

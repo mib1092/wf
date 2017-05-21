@@ -29,6 +29,26 @@
   .select-box {
     padding-top: 10px;
     padding-bottom: 91px;
+    select {
+      position: relative;
+      max-width: 257px;
+      width: 100%;
+      @include font(900, 26px, $font-heading, $line-height-heading);
+      border: none;
+      letter-spacing: 0.8px;
+      color: $color-heading;
+      text-transform: uppercase;
+      &:focus,
+      &:hover {
+        border: none;
+      }
+      option {
+        //text-transform: uppercase;
+        //@include font(900, 20px, $font-heading, $line-height-heading);
+        //letter-spacing: 1px;
+        //color: #5d5d5d;
+      }
+    }
   }
     .select2-container {
       max-width: 257px;

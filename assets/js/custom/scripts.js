@@ -19,12 +19,12 @@ $(document).ready(function() {
         });
     }
     // for FAQs accordion
-    $(".accordion-list > li > h2").on('click', function () {
+    $(".accordion-list > li > a").on('click', function () {
         $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);
     });
 
     //for select
-    if ($('div').hasClass('select-box')) {
-        $('.select-box select').select2();
-    }
+    // if ($('div').hasClass('select-box')) {
+    //     $('.select-box select').select2();
+    // }
 });
