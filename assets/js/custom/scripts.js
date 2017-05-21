@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
 
     // for modal
-    if ( $('a').is('.popup-video')) {
+    if ( $('a.popup-video').length ) {
         $('.popup-video').magnificPopup({
             disableOn: 700,
             type: 'iframe',
@@ -18,13 +18,15 @@ $(document).ready(function() {
             fixedContentPos: false
         });
     }
-    // for FAQs accordion
-    $(".accordion-list > li > a").on('click', function () {
-        $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);
-    });
 
-    //for select
-    // if ($('div').hasClass('select-box')) {
+    // for FAQs accordion
+    // $(".accordion-list > li > a").on('click', function () {
+    //     $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);
+    // });
+
+    // for select
+    // if ( $('.select-box').length ) {
     //     $('.select-box select').select2();
     // }
+
 });

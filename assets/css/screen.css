@@ -1764,6 +1764,21 @@ a.fb-invite-link {
     -o-transition: 0.35s;
     transition: 0.35s;
     cursor: pointer; }
+    .accordion-list > li h2 > a {
+      position: relative;
+      padding: 23px 35px 17px 0;
+      color: #005aff;
+      font: 900 28px "Montserrat";
+      line-height: 1.25;
+      letter-spacing: 0.75px;
+      -webkit-transition: 0.35s;
+      -khtml-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s;
+      cursor: pointer;
+      text-decoration: none; }
     .accordion-list > li h2:after {
       position: absolute;
       content: '\f107';
@@ -1798,6 +1813,10 @@ a.fb-invite-link {
       -ms-transform: rotate(-180deg);
       -o-transform: rotate(-180deg);
       transform: rotate(-180deg); }
+    .accordion-list > li h2 + [aria-hidden] {
+      display: none; }
+    .accordion-list > li h2 + [aria-hidden="false"] {
+      display: block; }
 
 .accordion-box-content {
   display: none;
@@ -1808,6 +1827,8 @@ a.fb-invite-link {
   line-height: 1.4;
   letter-spacing: 0.5px;
   word-spacing: 0.2px; }
+  [aria-hidden="false"] > .accordion-box-content {
+    display: block; }
   .accordion-box-content > * {
     margin-bottom: 20px; }
     .accordion-box-content > *:last-child {
@@ -1822,6 +1843,12 @@ a.fb-invite-link {
       list-style-type: disc; }
   .accordion-box-content li {
     margin-bottom: 5px; }
+
+.collapsible h3 + [aria-hidden] {
+  display: none; }
+
+.collapsible h3 + [aria-hidden="false"] {
+  display: block; }
 
 .section-fireworks .container,
 .section-blockquote .container {
@@ -2399,6 +2426,9 @@ a.eat-more-info {
     padding-top: 60px;
     padding-left: 160px; } }
 @media all and (max-width: 991px) {
+  .section-plan .plan-bg {
+    display: none; }
+
   .wrapper {
     padding-top: 66px; }
 
