@@ -19,6 +19,11 @@ $(document).ready(function() {
         });
     }
 
+    // for empty links
+    $('.prevent').on('click', function(event){
+        event.preventDefault();
+    });
+
     // for FAQs accordion
     // $(".accordion-list > li > a").on('click', function () {
     //     $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);

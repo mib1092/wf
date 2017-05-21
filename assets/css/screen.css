@@ -1786,12 +1786,6 @@ a.fb-invite-link {
       color: #005aff;
       right: 0;
       top: 50%;
-      -webkit-transition: 0.35s;
-      -khtml-transition: 0.35s;
-      -moz-transition: 0.35s;
-      -ms-transition: 0.35s;
-      -o-transition: 0.35s;
-      transition: 0.35s;
       -webkit-transform-origin: 50%;
       -khtml-transform-origin: 50%;
       -moz-transform-origin: 50%;
@@ -1804,7 +1798,7 @@ a.fb-invite-link {
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
-    .accordion-list > li h2.active:after {
+    .accordion-list > li h2.open:after {
       top: 12px;
       -webkit-transform: rotate(-180deg);
       -khtml-transform: rotate(-180deg);

@@ -15,7 +15,7 @@ $('.accordion-list > li').each(function() {
   var panel = h2.next();
 
   // Add the button inside the <h2> so both the heading and button semanics are read
-  h2.wrapInner('<a aria-expanded="false" aria-controls="'+ id +'">');
+  h2.wrapInner('<a href="#" class="prevent" aria-expanded="false" aria-controls="'+ id +'">');
 
   // Toggle the state properties
   h2.on('click', function(e) {
@@ -24,6 +24,11 @@ $('.accordion-list > li').each(function() {
         state = ( a.attr('aria-expanded') === 'false' ) ? true : false;
     a.attr('aria-expanded', state);
     panel.attr('aria-hidden', !state);
+    if (state) {
+        $(this).addClass('open');
+    } else {
+        $(this).removeClass('open');
+    }
   });
 
 });

@@ -64,11 +64,11 @@
             color: #005aff;
             right: 0;
             top: 50%;
-            @include transition($duration);
+            //@include transition($duration);
             @include css3-prefix('transform-origin', '50%');
             @include css3-prefix('transform', 'translateY(-50%)');
           }
-          &.active {
+          &.open {
             &:after {
               top: 12px;
               @include css3-prefix('transform', 'rotate(-180deg)');
