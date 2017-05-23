@@ -12,6 +12,16 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
+    $(function() {
+        var top_nav = $('.top-navbar .top-nav');
+
+        top_nav.find('a').focus(function(){
+            top_nav.addClass('active');
+        }).blur(function(){
+            top_nav.removeClass('active');
+        });
+    });
+
     // for FAQs accordion
     // $(".accordion-list > li > a").on('click', function () {
     //     $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);

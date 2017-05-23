@@ -68,7 +68,8 @@
             @include css3-prefix('transform-origin', '50%');
             @include css3-prefix('transform', 'translateY(-50%)');
           }
-          &.open {
+          &.open,
+          .no-js & {
             &:after {
               top: 12px;
               @include css3-prefix('transform', 'rotate(-180deg)');
@@ -77,14 +78,14 @@
           & + [aria-hidden] {
             display: none;
           }
-          & + [aria-hidden="false"] {
+          & + [aria-hidden="false"],
+          .no-js & + [aria-hidden] {
             display: block;
           }
         }
       }
     }
         .accordion-box-content {
-          display: none;
           position: relative;
           z-index: 2;
           color: $color-text;
@@ -93,9 +94,6 @@
           @include font(400, 18px, $font-main, $line-height);
           letter-spacing: 0.5px;
           word-spacing: 0.2px;
-          [aria-hidden="false"] > & {
-            display: block;
-          }
           > * {
             margin-bottom: 20px;
             &:last-child {

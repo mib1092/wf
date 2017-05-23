@@ -40,33 +40,34 @@
         z-index: 100;
         width: 30px;
         height: 29px;
-        right: 1px;
+        right: -5px;
         top: 1px;
         font: 34px FontAwesome;
-        color: #0097de;
+        color: $bg-color-blue;
         text-align: center;
         line-height: 30px;
-        background: #ffffff;
+        background: transparent;
         pointer-events: none;
       }
     }
     select {
       min-height: 32px;
+      padding-bottom: 2px;
       width: 100%;
       -webkit-appearance:none;
       -moz-appearance:none;
-      appearance:none;
+      appearance: none;
       cursor:pointer;
       @include font(900, 26px, $font-heading, $line-height-heading);
       border: none;
-      border-bottom: 2px solid $bg-color-blue;
+      border-bottom: 3px solid $bg-color-blue;
       @include border-radius(0);
       letter-spacing: 0.8px;
       color: $color-heading;
       text-transform: uppercase;
       &:focus,
       &:hover {
-        border-bottom: 2px solid $bg-color-blue;
+        border-bottom: 3px solid $bg-color-blue;
       }
     }
   }

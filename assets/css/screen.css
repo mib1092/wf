@@ -588,11 +588,20 @@ a.btn-play,
   z-index: 1000; }
   .top-navbar .container {
     max-width: 1170px; }
-  .top-navbar:hover .top-nav {
-    display: block; }
+  @media all and (min-width: 992px) {
+    .top-navbar .top-nav {
+      display: block; }
+      .top-navbar .top-nav a {
+        opacity: 0; }
+        .top-navbar .top-nav a:focus {
+          opacity: 1; }
+    .top-navbar:hover .top-nav a,
+    .top-navbar .top-nav.active a {
+      opacity: 1; } }
 
 .top-nav {
   display: none;
+  position: relative;
   overflow: hidden;
   padding-left: 29px;
   -webkit-transition: 0.35s;
@@ -649,7 +658,8 @@ a.btn-play,
       color: #e49f9f; }
 
 .top-nav li.active a,
-.top-nav li a:hover {
+.top-nav li a:hover,
+.top-nav li a:focus {
   color: #ffffff; }
 
 .nav .container {
@@ -1066,8 +1076,23 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px; } }
 /* styles used throughout site */
-.first-link {
-  display: none; }
+.jumpToContent {
+  position: absolute;
+  display: block;
+  width: 300px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px 15px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  z-index: -9999; }
+  .jumpToContent:focus {
+    z-index: 9999;
+    text-decoration: none; }
 
 .weather-alert {
   display: none;
@@ -1801,7 +1826,7 @@ a.fb-invite-link {
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
-    .accordion-list > li h2.open:after {
+    .accordion-list > li h2.open:after, .no-js .accordion-list > li h2:after {
       top: 12px;
       -webkit-transform: rotate(-180deg);
       -khtml-transform: rotate(-180deg);
@@ -1811,11 +1836,10 @@ a.fb-invite-link {
       transform: rotate(-180deg); }
     .accordion-list > li h2 + [aria-hidden] {
       display: none; }
-    .accordion-list > li h2 + [aria-hidden="false"] {
+    .accordion-list > li h2 + [aria-hidden="false"], .no-js .accordion-list > li h2 + [aria-hidden] {
       display: block; }
 
 .accordion-box-content {
-  display: none;
   position: relative;
   z-index: 2;
   color: #5d5d5d;
@@ -1825,8 +1849,6 @@ a.fb-invite-link {
   line-height: 1.4;
   letter-spacing: 0.5px;
   word-spacing: 0.2px; }
-  [aria-hidden="false"] > .accordion-box-content {
-    display: block; }
   .accordion-box-content > * {
     margin-bottom: 20px; }
     .accordion-box-content > *:last-child {
@@ -1930,16 +1952,17 @@ a.see-full,
       z-index: 100;
       width: 30px;
       height: 29px;
-      right: 1px;
+      right: -5px;
       top: 1px;
       font: 34px FontAwesome;
-      color: #0097de;
+      color: #005aff;
       text-align: center;
       line-height: 30px;
-      background: #ffffff;
+      background: transparent;
       pointer-events: none; }
   .select-box select {
     min-height: 32px;
+    padding-bottom: 2px;
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1948,7 +1971,7 @@ a.see-full,
     font: 900 26px "Montserrat";
     line-height: 1.25;
     border: none;
-    border-bottom: 2px solid #005aff;
+    border-bottom: 3px solid #005aff;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
     -moz-border-radius: 0;
@@ -1959,7 +1982,7 @@ a.see-full,
     color: #005aff;
     text-transform: uppercase; }
     .select-box select:focus, .select-box select:hover {
-      border-bottom: 2px solid #005aff; }
+      border-bottom: 3px solid #005aff; }
 
 .select2-container {
   max-width: 257px;
@@ -2762,9 +2785,14 @@ a.eat-more-info {
   .select-box .select-wrap {
     max-width: 158px; }
     .select-box .select-wrap:after {
-      font-size: 24px; }
+      font-size: 24px;
+      height: 22px;
+      line-height: 22px; }
   .select-box select {
-    font-size: 14px; }
+    font-size: 14px;
+    border-bottom-width: 2px;
+    padding-bottom: 0;
+    min-height: 24px; }
 
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     font-size: 14px; }
@@ -2775,7 +2803,8 @@ a.eat-more-info {
   .select2-container {
     max-width: 158px; }
 
-  .select2-container--default .select2-selection--single {
+  .select2-container--default .select2-selection--single,
+  .select-box select {
     border-bottom-width: 2px; }
 
   .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -2942,7 +2971,7 @@ a.eat-more-info {
       height: 50px; }
 
   .hero-top {
-    background: url(../../img/hero_banner.png) no-repeat center top transparent; }
+    background: url(../../img/hero_banner.jpg) no-repeat center top transparent; }
 
   .container.hero-bottom-wrap {
     background-color: #ffffff; }

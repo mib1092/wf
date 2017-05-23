@@ -4,8 +4,22 @@
   .container {
     max-width: 1170px;
   }
-  &:hover .top-nav {
-    display: block;
+  @media all and (min-width: 992px) {
+    .top-nav {
+      display: block;
+      a {
+        opacity: 0;
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+    &:hover .top-nav,
+    .top-nav.active {
+      a {
+        opacity: 1;
+      }
+    }
   }
 }
 .top-nav {
@@ -13,6 +27,7 @@
   //  display: none ;
   //}
   display: none;
+  position: relative;
   overflow: hidden;
   padding-left: 29px;
   @include transition($duration);
@@ -70,7 +85,8 @@
 }
 
 .top-nav li.active a,
-.top-nav li a:hover {
+.top-nav li a:hover,
+.top-nav li a:focus {
   color: $white
 }
 
