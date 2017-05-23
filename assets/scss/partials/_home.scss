@@ -185,7 +185,6 @@
           @include bg(center, contain, no-repeat);
         }
         &.blue_bg {
-
           &:before {
             left: -76px;
             top: -26px;
@@ -266,6 +265,10 @@
     }
   }
 
+  a:focus .video-box-wrap:after {
+    opacity: 1;
+  }
+
   /* overlay at start */
   .mfp-fade.mfp-bg {
     opacity: 0;
@@ -338,7 +341,8 @@
           width: 100%;
           color: $white;
           text-decoration: none;
-          &:hover {
+          &:hover,
+          &:focus {
             color: #606060;
           }
           @include font(200, 14px, $font-heading, 1.6);
@@ -496,8 +500,8 @@
         position: relative;
         display: block;
         padding-right: 20px;
-        padding-top: 13px;
-        padding-bottom: 11px;
+        padding-top: 15px;
+        padding-bottom: 13px;
         @include font(900, 24px, $font-heading, $line-height-heading);
         color: $white;
         text-decoration: none;
@@ -514,7 +518,8 @@
           @include transition($duration-link);
           @include css3-prefix('transform', ' translate(0, -50%)');
         }
-        &:hover {
+        &:hover,
+        &:focus {
           &:after {
             right: 0;
           }
@@ -643,7 +648,8 @@
       font-size: 32px;
       color: #fff;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #424141;
     }
   }
@@ -690,7 +696,8 @@
       @include css3-prefix('transform', 'translate(-50%, -50%) scale(1)');
       @include css3-prefix('transition-duration', '0.35s');
     }
-    &:hover {
+    &:hover,
+    a:focus & {
       img {
         @include css3-prefix('transform', 'translate(-50%, -50%) scale(1.5)');
       }

@@ -57,8 +57,10 @@
               @include transition($duration-link);
             }
             &:hover,
-            &:hover .fa-map-marker {
-              color: #d0d0d0;
+            &:focus {
+              &, .fa-map-marker {
+                color: #d0d0d0;
+              }
             }
           }
         }
@@ -84,7 +86,8 @@
               @include transition($duration-link);
             }
             > a {
-              &:hover {
+              &:hover,
+              &:focus {
                 .fa-map-marker {
                   color: $color-heading;
                 }

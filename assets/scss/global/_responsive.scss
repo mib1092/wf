@@ -144,6 +144,7 @@
   .top-nav {
     display: none;
     .inner-nav & {
+      display: none;
       padding-bottom: 20px;
     }
   }
@@ -228,6 +229,11 @@
     display: block;
     width: 100%;
   }
+  .hero-info-wrap {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+  }
     .hero-info-box {
       float: none;
       max-width: 530px;
@@ -240,6 +246,7 @@
       }
         .hero-info-list {
           > li {
+            padding: 0 15px;
             margin-bottom: 12px;
           }
         }
@@ -355,11 +362,16 @@
     }
   }
   .inner-nav {
-    padding-bottom: 40px;
+    padding: 25px 0 30px;
   }
   .title-page {
     font-size: 34px;
     letter-spacing: 1px;
+  }
+  .page-desc {
+    margin-bottom: -3px;
+    font-size: 12px;
+    padding-top: 7px;
   }
   .page-title-box {
     margin-top: 0;
@@ -611,10 +623,15 @@
   }
   .experience-box {
     float: right;
+    padding-top: 35px;
   }
 
+  .hero {
+    padding-bottom: 30px;
+  }
   .facebook-box {
     max-width: 360px;
+    display: none;
   }
   .sidebar {
     float: none;
@@ -625,13 +642,15 @@
   }
 }
 
-@media all and (max-width: 790px) {
-
-}
-
 @media all and (max-width: 768px) {
   .half-box.right {
     max-width: 350px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .mob {
+    display: none !important;
   }
 }
 
@@ -698,7 +717,7 @@
     padding-bottom: 20px;
   }
   .facebook-box {
-    display: table-header-group;
+    //display: table-header-group;
     > ul {
       > li {
         a {
@@ -709,15 +728,19 @@
   }
   .experience-box {
     padding: 40px 0 40px;
-    display: table-cell;
+    display: block;
+    float: none;
     color: #5d5d5d;
     opacity: 1;
+    &:not(.mob) {
+      display: none;
+    }
   }
   .video-box {
     display: table-footer-group;
   }
   a.fb-invite-link {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     p {
       display: block;
     }
@@ -787,8 +810,11 @@
     &.right{
       float: none;
       margin-bottom: 51px;
-      max-width: 400px;
       padding-left: 0;
+    }
+    &,
+    &.right {
+      max-width: 353px;
     }
   }
   .eat-wrap {
@@ -807,7 +833,7 @@
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
-    margin-top: 4px;
+    margin-top: 3px;
   }
   .event-wrap {
     overflow: visible;
@@ -825,7 +851,7 @@
     overflow: hidden;
   }
   .event-list > li {
-    margin-bottom: 9px;
+    margin-bottom: 25px;
   }
   .event-name {
     overflow: hidden;
@@ -943,13 +969,28 @@
 }
 
 @media all and (max-width: 420px) {
-//!!!
   .accordion-box-content {
     padding-right: 25px;
   }
 }
 
 @media all and (max-width: 380px) {
+  .hero-box-btn,
+  .hero-box-text {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    a.btn,
+    a.btn.small {
+      float: none;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  .hero-info-list > li {
+    margin-bottom: 20px;
+  }
 }
 
 @media all and (max-width: 360px) {

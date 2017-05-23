@@ -19,7 +19,8 @@
     letter-spacing: 0.6px;
     text-transform: uppercase;
     text-decoration: none;
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
   }

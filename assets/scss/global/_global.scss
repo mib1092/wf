@@ -17,7 +17,7 @@ input[type=submit], button     { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
 a:link, a:visited              { font-family: $font-main; color: $color-heading; text-decoration:underline; }
-a:hover                        { text-decoration:none; }
+a:hover, a:focus               { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -155,7 +155,8 @@ a.btn, .btn {
   @include font(900, 16px, $font-heading, 1.25);
   cursor: pointer;
   @include transition($duration-link);
-  &:hover {
+  &:hover,
+  &:focus {
     color: #005AFF;
     background-color: transparent;
   }
@@ -163,7 +164,8 @@ a.btn, .btn {
     color: $white;
     background-color: transparent;
     border-color: $white;
-    &:hover {
+    &:hover,
+    &:focus {
       color: #005AFF;
       background-color: $white;
     }

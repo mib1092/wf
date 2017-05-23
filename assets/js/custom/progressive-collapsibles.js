@@ -15,7 +15,7 @@ $('.accordion-list > li').each(function() {
   var panel = h2.next();
 
   // Add the button inside the <h2> so both the heading and button semanics are read
-  h2.wrapInner('<a href="#" class="prevent" aria-expanded="false" aria-controls="'+ id +'">');
+  h2.wrapInner('<a href="/broken" class="prevent" aria-expanded="false" aria-controls="'+ id +'">');
 
   // Toggle the state properties
   h2.on('click', function(e) {

@@ -35,7 +35,6 @@ $(document).ready(function() {
     // for modal
     if ( $('a.popup-video').length ) {
         $('.popup-video').magnificPopup({
-            disableOn: 700,
             type: 'iframe',
             mainClass: 'mfp-fade',
             removalDelay: 160,

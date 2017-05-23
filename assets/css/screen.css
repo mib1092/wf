@@ -165,7 +165,7 @@ a:link, a:visited {
   color: #005aff;
   text-decoration: underline; }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none; }
 
 /*----------------------------------------------------------------------------------*/
@@ -348,14 +348,14 @@ a.btn, .btn {
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s; }
-  a.btn:hover, .btn:hover {
+  a.btn:hover, a.btn:focus, .btn:hover, .btn:focus {
     color: #005AFF;
     background-color: transparent; }
   a.btn.inverse, .btn.inverse {
     color: #ffffff;
     background-color: transparent;
     border-color: #ffffff; }
-    a.btn.inverse:hover, .btn.inverse:hover {
+    a.btn.inverse:hover, a.btn.inverse:focus, .btn.inverse:hover, .btn.inverse:focus {
       color: #005AFF;
       background-color: #ffffff; }
 
@@ -644,7 +644,8 @@ a.btn-play,
             -o-transition: 0.35s;
             transition: 0.35s; }
         .inner-nav .top-nav ul > li.active a:after,
-        .inner-nav .top-nav ul > li a:hover:after {
+        .inner-nav .top-nav ul > li a:hover:after,
+        .inner-nav .top-nav ul > li a:focus:after {
           bottom: -6px; }
   .top-nav > ul > li {
     display: inline-block; }
@@ -709,7 +710,8 @@ a.btn-play,
       text-decoration: none; }
 
 .nav li.active a,
-.nav li a:hover {
+.nav li a:hover,
+.nav li a:focus {
   background-color: rgba(2, 2, 138, 0.8); }
 
 .mobile-menu {
@@ -1321,6 +1323,9 @@ img.mfp-img {
     height: auto;
     margin-bottom: -7px; }
 
+a:focus .video-box-wrap:after {
+  opacity: 1; }
+
 /* overlay at start */
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -1393,7 +1398,7 @@ img.mfp-img {
       font: 200 14px "Montserrat";
       line-height: 1.6;
       border: 1px solid #606060; }
-      .facebook-box > ul > li a:hover {
+      .facebook-box > ul > li a:hover, .facebook-box > ul > li a:focus {
         color: #606060; }
       .facebook-box > ul > li a img {
         position: relative;
@@ -1502,8 +1507,8 @@ img.mfp-img {
     position: relative;
     display: block;
     padding-right: 20px;
-    padding-top: 13px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 13px;
     font: 900 24px "Montserrat";
     line-height: 1.25;
     color: #ffffff;
@@ -1530,7 +1535,7 @@ img.mfp-img {
       -ms-transform:  translate(0, -50%);
       -o-transform:  translate(0, -50%);
       transform:  translate(0, -50%); }
-    .plan-list-mob > li a:hover:after {
+    .plan-list-mob > li a:hover:after, .plan-list-mob > li a:focus:after {
       right: 0; }
 
 .plan-box {
@@ -1642,7 +1647,7 @@ a.fb-invite-link {
     padding-top: 18px;
     font-size: 32px;
     color: #fff; }
-  a.fb-invite-link:hover {
+  a.fb-invite-link:hover, a.fb-invite-link:focus {
     background-color: #424141; }
 
 .facebook-list {
@@ -1698,16 +1703,16 @@ a.fb-invite-link {
     -ms-transition-duration: 0.35s;
     -o-transition-duration: 0.35s;
     transition-duration: 0.35s; }
-  .facebook-img-box:hover img {
+  .facebook-img-box:hover img, a:focus .facebook-img-box img {
     -webkit-transform: translate(-50%, -50%) scale(1.5);
     -khtml-transform: translate(-50%, -50%) scale(1.5);
     -moz-transform: translate(-50%, -50%) scale(1.5);
     -ms-transform: translate(-50%, -50%) scale(1.5);
     -o-transform: translate(-50%, -50%) scale(1.5);
     transform: translate(-50%, -50%) scale(1.5); }
-  .facebook-img-box:hover .facebook-hover-text {
+  .facebook-img-box:hover .facebook-hover-text, a:focus .facebook-img-box .facebook-hover-text {
     opacity: 1; }
-  .facebook-img-box:hover:before {
+  .facebook-img-box:hover:before, a:focus .facebook-img-box:before {
     opacity: 1; }
 
 .facebook-hover-text {
@@ -1931,8 +1936,9 @@ a.see-full,
   letter-spacing: 0.6px;
   text-transform: uppercase;
   text-decoration: none; }
-  a.see-full:hover,
-  .see-full:hover {
+  a.see-full:hover, a.see-full:focus,
+  .see-full:hover,
+  .see-full:focus {
     text-decoration: underline; }
 
 .see-mob {
@@ -2302,7 +2308,7 @@ a.see-full,
         -ms-transition: 0.25s;
         -o-transition: 0.25s;
         transition: 0.25s; }
-      .eat-list > li a:hover, .eat-list > li a:hover .fa-map-marker {
+      .eat-list > li a:hover, .eat-list > li a:hover .fa-map-marker, .eat-list > li a:focus, .eat-list > li a:focus .fa-map-marker {
         color: #d0d0d0; }
 
 .eat-list-details {
@@ -2325,7 +2331,7 @@ a.see-full,
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s; }
-.eat-item > a:hover .fa-map-marker {
+.eat-item > a:hover .fa-map-marker, .eat-item > a:focus .fa-map-marker {
   color: #005aff; }
 
 .eat-item-title {
@@ -2522,6 +2528,7 @@ a.eat-more-info {
   .top-nav {
     display: none; }
     .inner-nav .top-nav {
+      display: none;
       padding-bottom: 20px; }
 
   .hero {
@@ -2591,6 +2598,11 @@ a.eat-more-info {
     display: block;
     width: 100%; }
 
+  .hero-info-wrap {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px; }
+
   .hero-info-box {
     float: none;
     max-width: 530px;
@@ -2602,6 +2614,7 @@ a.eat-more-info {
     padding-right: 20px; }
 
   .hero-info-list > li {
+    padding: 0 15px;
     margin-bottom: 12px; }
 
   .hero-box-text {
@@ -2697,11 +2710,16 @@ a.eat-more-info {
       margin-bottom: 12px; }
 
   .inner-nav {
-    padding-bottom: 40px; }
+    padding: 25px 0 30px; }
 
   .title-page {
     font-size: 34px;
     letter-spacing: 1px; }
+
+  .page-desc {
+    margin-bottom: -3px;
+    font-size: 12px;
+    padding-top: 7px; }
 
   .page-title-box {
     margin-top: 0;
@@ -2916,10 +2934,15 @@ a.eat-more-info {
     overflow: hidden; }
 
   .experience-box {
-    float: right; }
+    float: right;
+    padding-top: 35px; }
+
+  .hero {
+    padding-bottom: 30px; }
 
   .facebook-box {
-    max-width: 360px; }
+    max-width: 360px;
+    display: none; }
 
   .sidebar {
     float: none;
@@ -2930,6 +2953,9 @@ a.eat-more-info {
 @media all and (max-width: 768px) {
   .half-box.right {
     max-width: 350px; } }
+@media all and (min-width: 768px) {
+  .mob {
+    display: none !important; } }
 @media all and (max-width: 767px) {
   .nav .container {
     position: relative;
@@ -2985,22 +3011,23 @@ a.eat-more-info {
     margin: 0 auto;
     padding-bottom: 20px; }
 
-  .facebook-box {
-    display: table-header-group; }
-    .facebook-box > ul > li a {
-      color: #5d5d5d; }
+  .facebook-box > ul > li a {
+    color: #5d5d5d; }
 
   .experience-box {
     padding: 40px 0 40px;
-    display: table-cell;
+    display: block;
+    float: none;
     color: #5d5d5d;
     opacity: 1; }
+    .experience-box:not(.mob) {
+      display: none; }
 
   .video-box {
     display: table-footer-group; }
 
   a.fb-invite-link {
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
     a.fb-invite-link p {
       display: block; }
     a.fb-invite-link .fa {
@@ -3056,8 +3083,9 @@ a.eat-more-info {
     .half-box.right {
       float: none;
       margin-bottom: 51px;
-      max-width: 400px;
       padding-left: 0; }
+    .half-box, .half-box.right {
+      max-width: 353px; }
 
   .eat-wrap {
     margin: 0; }
@@ -3072,7 +3100,7 @@ a.eat-more-info {
     width: 78px;
     padding: 7px 5px 7px;
     margin-right: 20px;
-    margin-top: 4px; }
+    margin-top: 3px; }
 
   .event-wrap {
     overflow: visible;
@@ -3089,7 +3117,7 @@ a.eat-more-info {
     overflow: hidden; }
 
   .event-list > li {
-    margin-bottom: 9px; }
+    margin-bottom: 25px; }
 
   .event-name {
     overflow: hidden;
@@ -3186,6 +3214,23 @@ a.eat-more-info {
 @media all and (max-width: 420px) {
   .accordion-box-content {
     padding-right: 25px; } }
+@media all and (max-width: 380px) {
+  .hero-box-btn,
+  .hero-box-text {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center; }
+    .hero-box-btn a.btn,
+    .hero-box-btn a.btn.small,
+    .hero-box-text a.btn,
+    .hero-box-text a.btn.small {
+      float: none;
+      max-width: 100%;
+      text-align: center; }
+
+  .hero-info-list > li {
+    margin-bottom: 20px; } }
 @media all and (max-width: 350px) {
   .select-box {
     padding-left: 20px; }
