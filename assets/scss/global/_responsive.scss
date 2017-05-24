@@ -425,7 +425,7 @@
       min-height: 56px;
       padding: 7px 5px 7px;
       margin-right: 20px;
-      margin-top: 6px;
+      margin-top: 4px;
     }
   }
 
@@ -433,7 +433,7 @@
     padding-top: 0;
     .fa-map-marker {
       position: relative;
-      bottom: -2px;
+      top: 0;
       font-size: 22px;
     }
   }
@@ -658,6 +658,7 @@
   .nav .container {
     position: relative;
     z-index: 1000;
+    max-width: 310px;
   }
   .section-plan {
     margin-top: 0;
@@ -712,7 +713,8 @@
   }
   .hero-bottom {
     display: table;
-    width: 267px;
+    width: 100%;
+    max-width: 290px;
     margin: 0 auto;
     padding-bottom: 20px;
   }
@@ -727,13 +729,27 @@
     }
   }
   .experience-box {
-    padding: 40px 0 40px;
+    padding: 7px 0 15px;
     display: block;
+    max-width: none;
     float: none;
     color: #5d5d5d;
     opacity: 1;
+    text-align: center;
     &:not(.mob) {
       display: none;
+    }
+    .experience-title,
+    p {
+      margin-bottom: 0;
+      font-size: 17px;
+      font-weight: 900;
+      color: #005aff;
+      text-transform: uppercase;
+    }
+    p {
+      font-weight: 200;
+      line-height: 1;
     }
   }
   .video-box {
@@ -742,6 +758,8 @@
   a.fb-invite-link {
     padding-bottom: 30px;
     p {
+      max-width: 290px;
+      margin: 0 auto;
       display: block;
     }
     .fa {
@@ -771,6 +789,8 @@
         }
         a {
           width: 100%;
+          padding-left: 5px;
+          padding-right: 5px;
         }
       }
     }
@@ -814,7 +834,7 @@
     }
     &,
     &.right {
-      max-width: 353px;
+      max-width: 290px;
     }
   }
   .eat-wrap {
@@ -826,6 +846,34 @@
       margin-bottom: 60px;
       padding-right: 30px;
     }
+
+  .hero-info-wrap {
+    padding: 0;
+  }
+  .hero-box {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .hero-box-btn,
+  .hero-box-text {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    overflow: hidden;
+    text-align: center;
+    a.btn,
+    a.btn.small {
+      float: none;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  .hero-info-list > li {
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -886,9 +934,6 @@
     margin-left: 10px;
     top: -3px
   }
-  .schedule .event-date-box {
-    margin-top: 4px;
-  }
 }
 
 @media all and (max-width: 560px) {
@@ -908,14 +953,6 @@
 }
 
 @media all and (max-width: 480px) {
-  .hero-box-btn {
-    width: 150px;
-    padding: 0 17px 0 0;
-  }
-  .hero-box {
-    padding-left: 0;
-    padding-right: 0;
-  }
   .section-all-day {
     .container {
       padding: 0;
@@ -975,22 +1012,7 @@
 }
 
 @media all and (max-width: 380px) {
-  .hero-box-btn,
-  .hero-box-text {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    a.btn,
-    a.btn.small {
-      float: none;
-      max-width: 100%;
-      text-align: center;
-    }
-  }
-  .hero-info-list > li {
-    margin-bottom: 20px;
-  }
+
 }
 
 @media all and (max-width: 360px) {
